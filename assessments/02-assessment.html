@@ -8,7 +8,7 @@
 
 <meta name="author" content="Mr.&nbsp;John Jennings">
 
-<title>Assessment 2 – Secure Public Cloud Services</title>
+<title>Assessment 3 – Secure Public Cloud Services</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -24,6 +24,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -34,7 +69,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../assessments/03-assessment.html" rel="next">
 <link href="../assessments/01-assessment.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -47,9 +81,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3ac5092d19ab4e60862c93a5c584c75d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-b1a070de40915831611ac472ad28cb1e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-3ac5092d19ab4e60862c93a5c584c75d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4af25de69698c5461c99c929619646e8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-6a08760318502576ba59166ef0d053c8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4af25de69698c5461c99c929619646e8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/naquiz-styles-1.0.4/buttons.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -79,8 +113,9 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Assessment 2 – Secure Public Cloud Services">
-<meta property="og:description" content="">
+<meta property="og:title" content="Assessment 3 – Secure Public Cloud Services">
+<meta property="og:description" content="Capstone Project - 30%">
+<meta property="og:image" content="images/CostEstimate.png">
 <meta property="og:site_name" content="Secure Public Cloud Services">
 </head>
 
@@ -255,7 +290,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../assessments/01-assessment.html">Assessments</a></li><li class="breadcrumb-item"><a href="../assessments/02-assessment.html">Assessment 2</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../assessments/01-assessment.html">Assessments</a></li><li class="breadcrumb-item"><a href="../assessments/02-assessment.html">Assessment 3</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -301,7 +336,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+ <span class="menu-text">Bibliography</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -357,12 +392,6 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../assessments/02-assessment.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Assessment 2</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../assessments/03-assessment.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Assessment 3</span></a>
   </div>
 </li>
@@ -378,7 +407,87 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#assessment-2" id="toc-assessment-2" class="nav-link active" data-scroll-target="#assessment-2">Assessment 2</a></li>
+  <li><a href="#capstone-project" id="toc-capstone-project" class="nav-link active" data-scroll-target="#capstone-project">Capstone Project</a>
+  <ul class="collapse">
+  <li><a href="#overview-and-objectives" id="toc-overview-and-objectives" class="nav-link" data-scroll-target="#overview-and-objectives">Overview and objectives</a></li>
+  <li><a href="#the-lab-environment-and-monitoring-your-budget" id="toc-the-lab-environment-and-monitoring-your-budget" class="nav-link" data-scroll-target="#the-lab-environment-and-monitoring-your-budget">The lab environment and monitoring your budget</a></li>
+  <li><a href="#aws-service-restrictions" id="toc-aws-service-restrictions" class="nav-link" data-scroll-target="#aws-service-restrictions">AWS service restrictions</a></li>
+  <li><a href="#scenario" id="toc-scenario" class="nav-link" data-scroll-target="#scenario">Scenario</a>
+  <ul class="collapse">
+  <li><a href="#solution-requirements" id="toc-solution-requirements" class="nav-link" data-scroll-target="#solution-requirements">Solution requirements</a></li>
+  </ul></li>
+  <li><a href="#project-deliverables" id="toc-project-deliverables" class="nav-link" data-scroll-target="#project-deliverables">Project deliverables</a></li>
+  <li><a href="#approach" id="toc-approach" class="nav-link" data-scroll-target="#approach">Approach</a>
+  <ul class="collapse">
+  <li><a href="#access-the-aws-management-console" id="toc-access-the-aws-management-console" class="nav-link" data-scroll-target="#access-the-aws-management-console">Access the AWS Management Console</a></li>
+  <li><a href="#step-1-creating-an-amazon-rds-mysql-database" id="toc-step-1-creating-an-amazon-rds-mysql-database" class="nav-link" data-scroll-target="#step-1-creating-an-amazon-rds-mysql-database">Step 1: Creating an Amazon RDS MySQL database</a></li>
+  <li><a href="#step-2-creating-an-application-load-balancer" id="toc-step-2-creating-an-application-load-balancer" class="nav-link" data-scroll-target="#step-2-creating-an-application-load-balancer">Step 2: Creating an Application Load Balancer</a></li>
+  <li><a href="#step-3-creating-the-application-server-in-an-auto-scaling-group" id="toc-step-3-creating-the-application-server-in-an-auto-scaling-group" class="nav-link" data-scroll-target="#step-3-creating-the-application-server-in-an-auto-scaling-group">Step 3: Creating the application server in an Auto Scaling Group</a></li>
+  <li><a href="#step-4-importing-data-into-an-rds-mysql-database" id="toc-step-4-importing-data-into-an-rds-mysql-database" class="nav-link" data-scroll-target="#step-4-importing-data-into-an-rds-mysql-database">Step 4: Importing data into an RDS MySQL database</a></li>
+  <li><a href="#step-5-testing-the-application-and-reviewing-imported-data" id="toc-step-5-testing-the-application-and-reviewing-imported-data" class="nav-link" data-scroll-target="#step-5-testing-the-application-and-reviewing-imported-data">Step 5: Testing the application and reviewing imported data</a></li>
+  </ul></li>
+  <li><a href="#submitting-your-work" id="toc-submitting-your-work" class="nav-link" data-scroll-target="#submitting-your-work">Submitting your work</a></li>
+  <li><a href="#ending-your-session" id="toc-ending-your-session" class="nav-link" data-scroll-target="#ending-your-session">Ending your session</a></li>
+  <li><a href="#the-assignment-is-designed-for-3-4-weeks-of-work-and-thoroughly-tests-students-understanding-of-aws-architecture-high-availability-patterns-and-security-best-practicesretryclaude-can-make-mistakes.-please-double-check-responses.-sonnet-4.5" id="toc-the-assignment-is-designed-for-3-4-weeks-of-work-and-thoroughly-tests-students-understanding-of-aws-architecture-high-availability-patterns-and-security-best-practicesretryclaude-can-make-mistakes.-please-double-check-responses.-sonnet-4.5" class="nav-link" data-scroll-target="#the-assignment-is-designed-for-3-4-weeks-of-work-and-thoroughly-tests-students-understanding-of-aws-architecture-high-availability-patterns-and-security-best-practicesretryclaude-can-make-mistakes.-please-double-check-responses.-sonnet-4.5">The assignment is designed for 3-4 weeks of work and thoroughly tests students’ understanding of AWS architecture, high availability patterns, and security best practices!RetryClaude can make mistakes. Please double-check responses. Sonnet 4.5</a></li>
+  </ul></li>
+  <li><a href="#assignment-high-availability-3-tier-web-application-deployment-on-aws" id="toc-assignment-high-availability-3-tier-web-application-deployment-on-aws" class="nav-link" data-scroll-target="#assignment-high-availability-3-tier-web-application-deployment-on-aws">Assignment: High-Availability 3-Tier Web Application Deployment on AWS</a>
+  <ul class="collapse">
+  <li><a href="#course-information" id="toc-course-information" class="nav-link" data-scroll-target="#course-information">Course Information</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#assignment-overview" id="toc-assignment-overview" class="nav-link" data-scroll-target="#assignment-overview">Assignment Overview</a></li>
+  <li><a href="#technical-requirements" id="toc-technical-requirements" class="nav-link" data-scroll-target="#technical-requirements">Technical Requirements</a>
+  <ul class="collapse">
+  <li><a href="#network-architecture-25-points" id="toc-network-architecture-25-points" class="nav-link" data-scroll-target="#network-architecture-25-points">1. Network Architecture (25 points)</a></li>
+  <li><a href="#frontend-tier---static-web-hosting-15-points" id="toc-frontend-tier---static-web-hosting-15-points" class="nav-link" data-scroll-target="#frontend-tier---static-web-hosting-15-points">2. Frontend Tier - Static Web Hosting (15 points)</a></li>
+  <li><a href="#backend-tier---application-servers-25-points" id="toc-backend-tier---application-servers-25-points" class="nav-link" data-scroll-target="#backend-tier---application-servers-25-points">3. Backend Tier - Application Servers (25 points)</a></li>
+  <li><a href="#database-tier---rds-mysql-20-points" id="toc-database-tier---rds-mysql-20-points" class="nav-link" data-scroll-target="#database-tier---rds-mysql-20-points">4. Database Tier - RDS MySQL (20 points)</a></li>
+  <li><a href="#security-implementation-25-points" id="toc-security-implementation-25-points" class="nav-link" data-scroll-target="#security-implementation-25-points">5. Security Implementation (25 points)</a></li>
+  <li><a href="#application-configuration-10-points" id="toc-application-configuration-10-points" class="nav-link" data-scroll-target="#application-configuration-10-points">6. Application Configuration (10 points)</a></li>
+  </ul></li>
+  <li><a href="#architecture-requirements-summary" id="toc-architecture-requirements-summary" class="nav-link" data-scroll-target="#architecture-requirements-summary">Architecture Requirements Summary</a>
+  <ul class="collapse">
+  <li><a href="#mandatory-components-checklist" id="toc-mandatory-components-checklist" class="nav-link" data-scroll-target="#mandatory-components-checklist">Mandatory Components Checklist</a></li>
+  </ul></li>
+  <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables">Deliverables</a>
+  <ul class="collapse">
+  <li><a href="#architecture-documentation-30-points" id="toc-architecture-documentation-30-points" class="nav-link" data-scroll-target="#architecture-documentation-30-points">1. Architecture Documentation (30 points)</a></li>
+  <li><a href="#configuration-files-10-points" id="toc-configuration-files-10-points" class="nav-link" data-scroll-target="#configuration-files-10-points">2. Configuration Files (10 points)</a></li>
+  <li><a href="#deployment-guide-15-points" id="toc-deployment-guide-15-points" class="nav-link" data-scroll-target="#deployment-guide-15-points">3. Deployment Guide (15 points)</a></li>
+  <li><a href="#video-demonstration-15-points" id="toc-video-demonstration-15-points" class="nav-link" data-scroll-target="#video-demonstration-15-points">4. Video Demonstration (15 points)</a></li>
+  <li><a href="#aws-console-screenshots-10-points" id="toc-aws-console-screenshots-10-points" class="nav-link" data-scroll-target="#aws-console-screenshots-10-points">5. AWS Console Screenshots (10 points)</a></li>
+  </ul></li>
+  <li><a href="#grading-rubric" id="toc-grading-rubric" class="nav-link" data-scroll-target="#grading-rubric">Grading Rubric</a></li>
+  <li><a href="#submission-requirements" id="toc-submission-requirements" class="nav-link" data-scroll-target="#submission-requirements">Submission Requirements</a>
+  <ul class="collapse">
+  <li><a href="#submission-format" id="toc-submission-format" class="nav-link" data-scroll-target="#submission-format">Submission Format</a></li>
+  <li><a href="#submission-details" id="toc-submission-details" class="nav-link" data-scroll-target="#submission-details">Submission Details</a></li>
+  <li><a href="#resource-access" id="toc-resource-access" class="nav-link" data-scroll-target="#resource-access">Resource Access</a></li>
+  </ul></li>
+  <li><a href="#important-notes" id="toc-important-notes" class="nav-link" data-scroll-target="#important-notes">Important Notes</a>
+  <ul class="collapse">
+  <li><a href="#aws-learner-lab-constraints" id="toc-aws-learner-lab-constraints" class="nav-link" data-scroll-target="#aws-learner-lab-constraints">AWS Learner Lab Constraints</a></li>
+  <li><a href="#cost-management" id="toc-cost-management" class="nav-link" data-scroll-target="#cost-management">Cost Management</a></li>
+  <li><a href="#academic-integrity" id="toc-academic-integrity" class="nav-link" data-scroll-target="#academic-integrity">Academic Integrity</a></li>
+  <li><a href="#getting-help" id="toc-getting-help" class="nav-link" data-scroll-target="#getting-help">Getting Help</a></li>
+  </ul></li>
+  <li><a href="#assessment-criteria" id="toc-assessment-criteria" class="nav-link" data-scroll-target="#assessment-criteria">Assessment Criteria</a>
+  <ul class="collapse">
+  <li><a href="#excellent-90-100" id="toc-excellent-90-100" class="nav-link" data-scroll-target="#excellent-90-100">Excellent (90-100%)</a></li>
+  <li><a href="#very-good-80-89" id="toc-very-good-80-89" class="nav-link" data-scroll-target="#very-good-80-89">Very Good (80-89%)</a></li>
+  <li><a href="#good-70-79" id="toc-good-70-79" class="nav-link" data-scroll-target="#good-70-79">Good (70-79%)</a></li>
+  <li><a href="#satisfactory-60-69" id="toc-satisfactory-60-69" class="nav-link" data-scroll-target="#satisfactory-60-69">Satisfactory (60-69%)</a></li>
+  <li><a href="#fail-60" id="toc-fail-60" class="nav-link" data-scroll-target="#fail-60">Fail (&lt;60%)</a></li>
+  </ul></li>
+  <li><a href="#learning-resources" id="toc-learning-resources" class="nav-link" data-scroll-target="#learning-resources">Learning Resources</a>
+  <ul class="collapse">
+  <li><a href="#aws-documentation" id="toc-aws-documentation" class="nav-link" data-scroll-target="#aws-documentation">AWS Documentation</a></li>
+  <li><a href="#recommended-tutorials" id="toc-recommended-tutorials" class="nav-link" data-scroll-target="#recommended-tutorials">Recommended Tutorials</a></li>
+  <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools">Tools</a></li>
+  </ul></li>
+  <li><a href="#frequently-asked-questions" id="toc-frequently-asked-questions" class="nav-link" data-scroll-target="#frequently-asked-questions">Frequently Asked Questions</a></li>
+  <li><a href="#timeline-recommendation" id="toc-timeline-recommendation" class="nav-link" data-scroll-target="#timeline-recommendation">Timeline Recommendation</a></li>
+  <li><a href="#contact-information" id="toc-contact-information" class="nav-link" data-scroll-target="#contact-information">Contact Information</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -386,9 +495,10 @@ ul.task-list li input[type="checkbox"] {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../assessments/01-assessment.html">Assessments</a></li><li class="breadcrumb-item"><a href="../assessments/02-assessment.html">Assessment 2</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../assessments/01-assessment.html">Assessments</a></li><li class="breadcrumb-item"><a href="../assessments/02-assessment.html">Assessment 3</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Assessment 2</h1>
+<h1 class="title">Assessment 3</h1>
+<p class="subtitle lead">Capstone Project - 30%</p>
 </div>
 
 
@@ -411,230 +521,795 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="assessment-2" class="level2">
-<h2 class="anchored" data-anchor-id="assessment-2">Assessment 2</h2>
-<p>Test your understanding of the course material covered up to this point. Replace the placeholder text in each question with content relevant to your course topic. The option marked ‘.correct-choice’ is revealed as correct when learners submit.</p>
-<div class="question">
-<p>What is the definition of [key concept] from this course?</p>
-<div class="choices">
-<div x-data="{ answer: '' , clear() { this.answer = '' }}">
-
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no1"> <span id="no1" x-show="answer == $el.id" class="badge">✗</span>An unrelated process with no bearing on the topic</p><p></p>
+<section id="capstone-project" class="level1">
+<h1>Capstone Project</h1>
+<p>The capstone project in the AWS Academy Cloud Architecting (ACA) curriculum is designed as the culminating experience that allows learners to demonstrate their mastery of AWS cloud concepts, architecture best practices, and hands-on implementation. It integrates knowledge gained from the entire course, covering topics such as networking, compute, storage, databases, security, monitoring, and automation.</p>
+<p>In the capstone, students are typically presented with a real-world business problem that requires designing and deploying a secure, scalable, and cost-effective cloud solution. They must apply the AWS Well-Architected Framework, considering the five pillars: operational excellence, security, reliability, performance efficiency, and cost optimization. Learners design architecture diagrams, justify technology choices, and implement core services like Amazon EC2, S3, RDS, IAM, VPC, and CloudFormation for infrastructure as code.</p>
+<p>The project emphasizes not only technical accuracy but also professional skills such as documentation, communication, and solution presentation. By completing the capstone, participants demonstrate their ability to translate business requirements into a working AWS architecture. This project is also an opportunity to build a portfolio piece, showcasing readiness for cloud-related roles. Ultimately, it reinforces problem-solving, critical thinking, and applied cloud architecture skills in a practical context.</p>
+<p>Once given the assessment brief, you will be required to prepare an architectural diagram solution to the problem and then over 2 weeks you will have the opportunity to create and deploy your solution architecture to AWS.</p>
+<p>This project is worth 30% of your module grade.</p>
+<section id="overview-and-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="overview-and-objectives">Overview and objectives</h2>
+<p>Throughout this course, you have completed hands-on labs. You have used different AWS services and features to create compute instances, install operating systems (OSs) and software, deploy code, and secure resources. You practiced how to enable load balancing and automatic scaling and how to architect for high availability to build lab-specific applications.</p>
+<p>In this project, you’re challenged to use familiar AWS services to build a solution without step-by-step guidance. Specific sections of the assignment are meant to challenge you on skills that you have acquired throughout the Academy Cloud Architecting (ACA) course.</p>
+<p>By the end of this project, you should be able to apply the architectural design principles that you learned in this course to do the following:</p>
+<ul>
+<li><p>Create a database (DB) instance that the PHP application can query.</p></li>
+<li><p>Create and deploy the highly available PHP application with the load distributed across multiple web servers and Availability Zones.</p></li>
+<li><p>Use AWS Secrets Manager.</p></li>
+<li><p>Import data into a MySQL database from a SQL dump file.</p></li>
+<li><p>Secure the application to prevent public access to application servers and backend systems.</p></li>
+</ul>
+</section>
+<section id="the-lab-environment-and-monitoring-your-budget" class="level2">
+<h2 class="anchored" data-anchor-id="the-lab-environment-and-monitoring-your-budget">The lab environment and monitoring your budget</h2>
+<p>This environment is long lived. When the session timer gets to 0:00, the session will end, but any data and resources that you created in the Amazon Web Services (AWS) account will be retained. If you later launch a new session (for example, the next day), you will find that your work is still in the lab environment. Also, at any point before the session timer reaches 0:00, you can choose <strong>Start Lab</strong> again to extend the lab session time.</p>
+<p><strong>Important:</strong> Monitor your lab budget in the lab interface. When you have an active lab session, the latest known remaining budget information displays at the top of this screen. This data comes from AWS Budgets, which typically updates every 8–12 hours. Therefore, the remaining budget that you see might not reflect your most recent account activity. If you exceed your lab budget, your lab account will be disabled, and all progress and resources will be lost. Therefore, it’s important for you to manage your spending.</p>
+<p>The following are a few suggestions to avoid overspending:</p>
+<ul>
+<li><p>Launch only the number of EC2 instances that you need, sized to your requirements.</p></li>
+<li><p>Delete resources and data that you no longer need.</p></li>
+<li><p>Typically, it is compute-type resources, such as Amazon Elastic Compute Cloud (Amazon EC2) instances, Amazon Relational Database Service (Amazon RDS) database instances, AWS Cloud9, and NAT gateway instances, that you leave running that most quickly use up your budget. Turn these off when you no longer need them, or–better yet–delete them.</p></li>
+<li><p>Stop any NAT gateways, EC2 instances, and Amazon RDS instances when they are not in use.</p>
+<ul>
+<li><p>Be aware that if you do stop an Amazon RDS instance or cluster and leave it stopped for 7 days, AWS might start it again automatically, which will increase the cost impact.</p></li>
+<li><p>NAT gateway resources, if left running, will also use up your budget.</p></li>
+</ul></li>
+<li><p>To estimate your costs, use the <a href="https://calculator.aws/">AWS Pricing Calculator</a>.</p></li>
+</ul>
+<p>Here is a sample that shows the cost to run the resources in the us-east-1 Region for a month and an entire year:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/CostEstimate.png" class="img-fluid figure-img"></p>
+<figcaption>cost estimate</figcaption>
+</figure>
 </div>
-<div class="choice correct-choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="correct"> <span id="correct" x-show="answer == $el.id" class="badge">✓</span>[Write the correct definition here]</p><p></p>
+<p><strong>Note:</strong> Pricing is subject to change. The calculation in the previous sample is an example from a point in time.</p>
+<p>If you want to reset your AWS account to the original settings before you ran sessions of this lab environment, choose <strong>Reset</strong> . <strong>CAUTION</strong>: If you choose <strong>Reset</strong> and then choose <strong>Yes</strong> to confirm that you want to reset, you will permanently delete everything that you have created or stored in the AWS account.</p>
+</section>
+<section id="aws-service-restrictions" class="level2">
+<h2 class="anchored" data-anchor-id="aws-service-restrictions">AWS service restrictions</h2>
+<p>In this lab environment, access to AWS services and service actions might be restricted to the ones that are needed to complete the lab instructions. You might encounter errors if you attempt to access other services or perform actions beyond the ones that are described in this lab.</p>
+</section>
+<section id="scenario" class="level2">
+<h2 class="anchored" data-anchor-id="scenario">Scenario</h2>
+<p>…</p>
+<p>The following summary lists the solution requirements and provides a diagram of the current environment.</p>
+<section id="solution-requirements" class="level3">
+<h3 class="anchored" data-anchor-id="solution-requirements">Solution requirements</h3>
+<ul>
+<li><p>Provide secure hosting of the MySQL database.</p></li>
+<li><p>Provide secure access to the database.</p></li>
+<li><p>Provide anonymous access to web users.</p></li>
+<li><p>Run the website on a t2.micro EC2 instance running in private subnets and provide Secure Shell (SSH) access to administrators.</p></li>
+<li><p>Provide high availability to the website through a load balancer.</p></li>
+<li><p>Provide automatic scaling that uses a launch template.</p></li>
+</ul>
+<p>As part of the lab provisioning, the components in the following architecture diagram are already available to you in the lab:</p>
+<p><strong>Starting architecture</strong></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./images/Start-arc.png" class="img-fluid figure-img"></p>
+<figcaption>Following architecture diagram shows the infrastrcuture components available at the start of the lab.</figcaption>
+</figure>
 </div>
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no3"> <span id="no3" x-show="answer == $el.id" class="badge">✗</span>A simplified version that ignores core principles</p><p></p>
-</div>
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no4"> <span id="no4" x-show="answer == $el.id" class="badge">✗</span>A legacy approach no longer in use</p><p></p>
-</div>
-</div>
-
-</div>
-</div>
+<p><strong>Assumptions</strong></p>
+<p>This project will be built in a controlled lab environment that has restrictions on services, features, and budget. Consider the following assumptions for the project:</p>
+<ul>
+<li><p>The application is deployed in one AWS Region (the solution does not need to be multi-Regional).</p></li>
+<li><p>The website does not need to be available over HTTPS or a custom domain.</p></li>
+<li><p>The solution is deployed on Amazon Linux 2023 machines by using the PHP code that is provided. A template is already available in the lab to launch EC2 instances.</p></li>
+<li><p>The solution uses the PHP code as provided unless the instructions specifically direct you to change the code.</p></li>
+<li><p>The solution uses services and features within the restrictions of the lab environment.</p></li>
+<li><p>The solution uses all the three pairs of subnets provisioned.</p></li>
+<li><p>The solution uses the available AWS Identity and Access Management (IAM) role.</p></li>
+<li><p>The database can be hosted in a single Availability Zone or multiple Availability Zones.</p></li>
+<li><p>Store database connection information in Secrets Manager.</p></li>
+<li><p>The website is publicly accessible without authentication.</p></li>
+</ul>
+<p><strong>Disclaimer:</strong> A security best practice is to allow access to the website through authentication. However, because you are building this application as a part of the course, those features are beyond the scope of this project.</p>
+</section>
+</section>
+<section id="project-deliverables" class="level2">
+<h2 class="anchored" data-anchor-id="project-deliverables">Project deliverables</h2>
+<p>To complete this assignment, you must do the following:</p>
+<ul>
+<li><p>Submit a diagram that illustrates your solution.</p></li>
+<li><p>Deploy and demonstrate a PHP application that meets the system requirements outlined in these lab instructions.</p></li>
+<li><p>Submit a written summary of the design decisions that you made to achieve the result.</p></li>
+</ul>
+</section>
+<section id="approach" class="level2">
+<h2 class="anchored" data-anchor-id="approach">Approach</h2>
+<p><strong>Recommendation:</strong> Develop your project solution that is mentioned in the following steps. This will help you map the building blocks with the solution requirements.</p>
+<section id="access-the-aws-management-console" class="level3">
+<h3 class="anchored" data-anchor-id="access-the-aws-management-console">Access the AWS Management Console</h3>
+<ol type="1">
+<li><p>At the top of these instructions, choose <strong>Start Lab</strong> to start the lab session.</p>
+<ul>
+<li><p>The lab session starts.</p></li>
+<li><p>A timer displays at the top of the page and shows the time remaining in the session.</p></li>
+</ul>
+<p><strong>Tip:</strong> To refresh the session length at any time, choose <strong>Start Lab</strong> again before the timer reaches 0:00.</p>
+<ul>
+<li>Before you continue, wait until the circle icon to the right of the AWS link in the upper-left corner turns green.</li>
+</ul></li>
+<li><p>To connect to the AWS Management Console, choose the <strong>AWS</strong> link in the upper-left corner above the terminal window.</p>
+<ul>
+<li><p>A new browser tab opens and connects you to the console.</p>
+<p><strong>Tip:</strong> If a new browser tab does not open, a banner or icon is usually at the top of your browser with a message that your browser is preventing the site from opening pop-up windows. Choose the banner or icon, and then choose <strong>Allow pop-ups</strong>.</p></li>
+</ul></li>
+</ol>
+</section>
+<section id="step-1-creating-an-amazon-rds-mysql-database" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-creating-an-amazon-rds-mysql-database">Step 1: Creating an Amazon RDS MySQL database</h3>
+<ol start="3" type="1">
+<li>Create an Amazon RDS MySQL database.</li>
+</ol>
+<p><strong>Tips:</strong></p>
+<ul>
+<li><p>The database security group should allow only the web application to access the database.</p></li>
+<li><p>Use Secrets Manager to store the username and password.</p></li>
+<li><p>Keep the initial database as <strong>countries</strong>.</p></li>
+<li><p>Use the database subnet group already provisioned in the lab.</p></li>
+</ul>
+<p><strong>Note:</strong> Turning on additional features while configuring the database might incur charges that impact your cost estimate. Turn on only the features that are essential to your work.</p>
+<p><strong>References:</strong></p>
+<ul>
+<li><p>AWS Academy Cloud Architecting – Lab: Guided Lab – Creating an Amazon RDS Database</p></li>
+<li><p><a href="https://aws.amazon.com/getting-started/hands-on/create-mysql-db/">Create and Connect to a MySQL Database with Amazon RDS</a></p></li>
+</ul>
+</section>
+<section id="step-2-creating-an-application-load-balancer" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-creating-an-application-load-balancer">Step 2: Creating an Application Load Balancer</h3>
+<ol start="4" type="1">
+<li>Launch an Application Load Balancer in the available public subnets. The load balancer’s DNS name will be used to access your web application.</li>
+</ol>
+<p><strong>Tip:</strong> Use a minimum of two Availability Zones.</p>
+<p><strong>References:</strong></p>
+<ul>
+<li><p><a href="https://aws.amazon.com/elasticloadbalancing/getting-started/?nc=sn&amp;loc=4">Getting Started with Elastic Load Balancing</a></p></li>
+<li><p>AWS Academy Cloud Architecting – Lab: Creating a Highly Available Environment</p></li>
+</ul>
+</section>
+<section id="step-3-creating-the-application-server-in-an-auto-scaling-group" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-creating-the-application-server-in-an-auto-scaling-group">Step 3: Creating the application server in an Auto Scaling Group</h3>
+<ol start="5" type="1">
+<li><p>Create a launch template that you will use to launch EC2 instances in an Auto Scaling group.</p></li>
+<li><p>Use an Auto Scaling group to launch the EC2 instances (application servers) that host the web application.</p></li>
+<li><p>To install the required web application on the virtual machine, use the <a href="https://aws-tc-largeobjects.s3.us-west-2.amazonaws.com/CUR-TF-200-ACACAD-3-113230/22-lab-Capstone-project/s3/Example.zip">PHP code that is available</a>.</p></li>
+<li><p>Use the Application Load Balancer that you created earlier.</p></li>
+</ol>
+<p><strong>Note</strong>: An EC2 launch template named <strong>Example-LT</strong> is provided in the AWS account. It already has both the SQL dump file and the unzipped PHP application resources built into it.</p>
+<p><strong>Tips:</strong></p>
+<ul>
+<li><p>Use a target tracking policy.</p></li>
+<li><p>Set the Auto Scaling group size according to your estimated requirements.</p></li>
+<li><p>You can use the default values (for example, for group size and CPU utilization) initially and then adjust them later as needed.</p></li>
+</ul>
+<p><strong>Reference:</strong></p>
+<ul>
+<li>AWS Academy Cloud Architecting – Lab: Creating a Highly Available Environment</li>
+</ul>
+</section>
+<section id="step-4-importing-data-into-an-rds-mysql-database" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-importing-data-into-an-rds-mysql-database">Step 4: Importing data into an RDS MySQL database</h3>
+<ol start="9" type="1">
+<li><p>Migrate the data from the original database, which is on an EC2 instance, to the new Amazon RDS database. Use the <a href="https://aws-tc-largeobjects.s3.us-west-2.amazonaws.com/CUR-TF-200-ACACAD-3-113230/22-lab-Capstone-project/s3/Countrydatadump.sql">data dump file that is available</a>.</p></li>
+<li><p>Refer to Secrets Manager for the username and password.</p></li>
+<li><p>Use the same database that you created while provisioning an RDS MySQL database.</p></li>
+</ol>
+<p><strong>Reference:</strong></p>
+<ul>
+<li>For commands, see “<a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedural.Importing.NonRDSRepl.html">Importing Data to an Amazon RDS MariaDB or MySQL Database with Reduced Downtime</a>.”</li>
+</ul>
+</section>
+<section id="step-5-testing-the-application-and-reviewing-imported-data" class="level3">
+<h3 class="anchored" data-anchor-id="step-5-testing-the-application-and-reviewing-imported-data">Step 5: Testing the application and reviewing imported data</h3>
+<ol start="12" type="1">
+<li><p>To test the application, access the web application from a browser by using the load balancer URL.</p></li>
+<li><p>To review and query the imported data, use the query functionality in the application.</p></li>
+</ol>
+</section>
+</section>
+<section id="submitting-your-work" class="level2">
+<h2 class="anchored" data-anchor-id="submitting-your-work">Submitting your work</h2>
+<ol start="14" type="1">
+<li><p>To record your progress, at the top of these instructions, choose <strong>Submit</strong>.</p></li>
+<li><p>When prompted, choose <strong>Yes</strong>.</p></li>
+</ol>
+<p>After a couple of minutes, the <strong>Grades</strong> panel appears and shows you how many points you earned for each task. If the results don’t display after a couple of minutes, choose <strong>Grades</strong> at the top of these instructions.</p>
+<p><strong>Tip:</strong> You can submit your work multiple times. After you change your work, choose <strong>Submit</strong> again. Your last submission is recorded for this lab.</p>
+</section>
+<section id="ending-your-session" class="level2">
+<h2 class="anchored" data-anchor-id="ending-your-session">Ending your session</h2>
+<p><strong>Reminder:</strong> This is a long-lived lab environment. Data is retained until either you use the allocated budget or the course end date is reached (whichever occurs first).</p>
+<p>To preserve your budget when you are finished for the day or when you are finished actively working on the assignment for the time being, do the following:</p>
+<ol start="16" type="1">
+<li>At the top of this page, choose <strong>End Lab</strong>, and then choose Yes to confirm that you want to end the lab.</li>
+</ol>
+<p>A message appears: <em>Ended AWS Lab Successfully</em></p>
+<p><strong>Note:</strong> Choosing <strong>End lab</strong> in this lab environment will not delete the resources that you have created. They will still be there the next time you choose <strong>Start Lab</strong> (for example, on another day).</p>
 <hr>
-<div class="question">
-<p>Which of the following best describes [process or method] covered in this course?</p>
-<div class="choices">
-<div x-data="{ answer: '' , clear() { this.answer = '' }}">
-
-<div class="choice correct-choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="correct"> <span id="correct" x-show="answer == $el.id" class="badge">✓</span>[Write the correct description here]</p><p></p>
-</div>
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no2"> <span id="no2" x-show="answer == $el.id" class="badge">✗</span>A technique used only in advanced scenarios</p><p></p>
-</div>
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no3"> <span id="no3" x-show="answer == $el.id" class="badge">✗</span>An optional step that can usually be skipped</p><p></p>
-</div>
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no4"> <span id="no4" x-show="answer == $el.id" class="badge">✗</span>A method applicable only to a different domain</p><p></p>
-</div>
-</div>
-
-</div>
-</div>
+<p>Key Assignment Features: High Availability Requirements:</p>
+<p>Multi-AZ deployment across at least 2 Availability Zones Application Load Balancer for frontend traffic distribution Auto Scaling Group with minimum 2 backend instances RDS Multi-AZ with automatic failover NAT Gateways in each AZ for redundancy CloudFront for content delivery and caching</p>
+<p>Security Requirements:</p>
+<p>Bastion host for secure SSH access Private subnets for backend and database tiers Properly configured security groups with least privilege SSH access only through bastion host Network segmentation with public/private subnets</p>
+<p>Assessment Components:</p>
+<p>Technical Documentation (30%) - Architecture diagrams and analysis Configuration Files (10%) - All setup files Deployment Guide (15%) - Step-by-step instructions Video Demonstration (15%) - Live testing of HA features Screenshots (10%) - AWS console evidence Implementation (120 points across 6 technical areas)</p>
+<p>Bonus Opportunities (+25 points):</p>
+<p>Auto-scaling policies RDS read replicas CloudWatch monitoring and alarms IAM roles and Session Manager</p>
+</section>
+<section id="the-assignment-is-designed-for-3-4-weeks-of-work-and-thoroughly-tests-students-understanding-of-aws-architecture-high-availability-patterns-and-security-best-practicesretryclaude-can-make-mistakes.-please-double-check-responses.-sonnet-4.5" class="level2">
+<h2 class="anchored" data-anchor-id="the-assignment-is-designed-for-3-4-weeks-of-work-and-thoroughly-tests-students-understanding-of-aws-architecture-high-availability-patterns-and-security-best-practicesretryclaude-can-make-mistakes.-please-double-check-responses.-sonnet-4.5">The assignment is designed for 3-4 weeks of work and thoroughly tests students’ understanding of AWS architecture, high availability patterns, and security best practices!RetryClaude can make mistakes. Please double-check responses. Sonnet 4.5</h2>
+</section>
+</section>
+<section id="assignment-high-availability-3-tier-web-application-deployment-on-aws" class="level1">
+<h1>Assignment: High-Availability 3-Tier Web Application Deployment on AWS</h1>
+<section id="course-information" class="level2">
+<h2 class="anchored" data-anchor-id="course-information">Course Information</h2>
+<p><strong>Module:</strong> Cloud Infrastructure and Services<br>
+<strong>Assignment Type:</strong> Practical Lab Assessment<br>
+<strong>Duration:</strong> 3-4 weeks<br>
+<strong>Weight:</strong> 30% of final grade<br>
+<strong>Environment:</strong> AWS Learner Lab</p>
 <hr>
-<div class="question">
-<p>What is the primary benefit of applying [technique] in [context]?</p>
-<div class="choices">
-<div x-data="{ answer: '' , clear() { this.answer = '' }}">
-
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no1"> <span id="no1" x-show="answer == $el.id" class="badge">✗</span>It eliminates the need for all other steps</p><p></p>
-</div>
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no2"> <span id="no2" x-show="answer == $el.id" class="badge">✗</span>It reduces accuracy in favour of speed</p><p></p>
-</div>
-<div class="choice correct-choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="correct"> <span id="correct" x-show="answer == $el.id" class="badge">✓</span>[Write the correct benefit here]</p><p></p>
-</div>
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no4"> <span id="no4" x-show="answer == $el.id" class="badge">✗</span>It is only relevant to large-scale organisations</p><p></p>
-</div>
-</div>
-
-</div>
-</div>
+</section>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<p>Upon completion of this assignment, students will be able to:</p>
+<ol type="1">
+<li>Design and implement a fault-tolerant, highly available cloud architecture</li>
+<li>Deploy a multi-tier application across multiple Availability Zones</li>
+<li>Configure load balancers for traffic distribution and failover</li>
+<li>Implement secure network access using bastion hosts and security groups</li>
+<li>Configure database replication for high availability</li>
+<li>Apply AWS best practices for security, scalability, and resilience</li>
+<li>Document cloud infrastructure and troubleshoot deployment issues</li>
+</ol>
 <hr>
-<div class="question">
-<p>In the context of this course, what does [acronym or term] stand for?</p>
-<div class="choices">
-<div x-data="{ answer: '' , clear() { this.answer = '' }}">
-
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no1"> <span id="no1" x-show="answer == $el.id" class="badge">✗</span>[Incorrect expansion A]</p><p></p>
-</div>
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no2"> <span id="no2" x-show="answer == $el.id" class="badge">✗</span>[Incorrect expansion B]</p><p></p>
-</div>
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no3"> <span id="no3" x-show="answer == $el.id" class="badge">✗</span>[Incorrect expansion C]</p><p></p>
-</div>
-<div class="choice correct-choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="correct"> <span id="correct" x-show="answer == $el.id" class="badge">✓</span>[Write the correct expansion here]</p><p></p>
-</div>
-</div>
-
-</div>
-</div>
+</section>
+<section id="assignment-overview" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-overview">Assignment Overview</h2>
+<p>You are required to deploy a 3-tier Task Manager web application to AWS Learner Lab with <strong>enterprise-grade availability, fault tolerance, and security</strong>. The application consists of:</p>
+<ul>
+<li><strong>Frontend Tier:</strong> React single-page application</li>
+<li><strong>Backend Tier:</strong> Spring Boot REST API</li>
+<li><strong>Database Tier:</strong> MySQL relational database</li>
+</ul>
+<p>Your deployment must demonstrate understanding of high-availability architecture patterns, disaster recovery principles, and AWS security best practices.</p>
 <hr>
-<div class="question">
-<p>Which statement about [concept] is <strong>correct</strong>?</p>
-<div class="choices">
-<div x-data="{ answer: '' , clear() { this.answer = '' }}">
-
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no1"> <span id="no1" x-show="answer == $el.id" class="badge">✗</span>It applies only under very specific conditions that are rarely met</p><p></p>
-</div>
-<div class="choice correct-choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="correct"> <span id="correct" x-show="answer == $el.id" class="badge">✓</span>[Write the correct statement here]</p><p></p>
-</div>
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no3"> <span id="no3" x-show="answer == $el.id" class="badge">✗</span>It was introduced in [wrong era or context]</p><p></p>
-</div>
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no4"> <span id="no4" x-show="answer == $el.id" class="badge">✗</span>It contradicts the principles discussed in this course</p><p></p>
-</div>
-</div>
-
-</div>
-</div>
+</section>
+<section id="technical-requirements" class="level2">
+<h2 class="anchored" data-anchor-id="technical-requirements">Technical Requirements</h2>
+<section id="network-architecture-25-points" class="level3">
+<h3 class="anchored" data-anchor-id="network-architecture-25-points">1. Network Architecture (25 points)</h3>
+<section id="vpc-configuration" class="level4">
+<h4 class="anchored" data-anchor-id="vpc-configuration">VPC Configuration</h4>
+<ul>
+<li>Create a custom VPC with CIDR block (e.g., 10.0.0.0/16)</li>
+<li>Deploy across <strong>at least 2 Availability Zones</strong> (AZs)</li>
+<li>Implement proper subnet segmentation:</li>
+</ul>
+<p><strong>Public Subnets</strong> (2+ subnets, one per AZ): - Bastion host subnet - Application Load Balancer subnet - NAT Gateway subnet</p>
+<p><strong>Private Subnets</strong> (4+ subnets, one per AZ): - Backend application tier (EC2 instances) - Database tier (RDS instances)</p>
+</section>
+<section id="internet-connectivity" class="level4">
+<h4 class="anchored" data-anchor-id="internet-connectivity">Internet Connectivity</h4>
+<ul>
+<li>Internet Gateway for public subnet access</li>
+<li>NAT Gateway in each AZ for private subnet outbound traffic</li>
+<li>Proper route table configuration for all subnets</li>
+</ul>
+<p><strong>Deliverable:</strong> Network architecture diagram showing all subnets, AZs, gateways, and routing</p>
 <hr>
-<div class="question">
-<p>What is the correct sequence of steps for [process]?</p>
-<div class="choices">
-<div x-data="{ answer: '' , clear() { this.answer = '' }}">
-
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no1"> <span id="no1" x-show="answer == $el.id" class="badge">✗</span>Step C → Step A → Step B → Step D</p><p></p>
-</div>
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no2"> <span id="no2" x-show="answer == $el.id" class="badge">✗</span>Step B → Step D → Step A → Step C</p><p></p>
-</div>
-<div class="choice correct-choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="correct"> <span id="correct" x-show="answer == $el.id" class="badge">✓</span>[Write the correct sequence here]</p><p></p>
-</div>
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no4"> <span id="no4" x-show="answer == $el.id" class="badge">✗</span>The steps can be performed in any order</p><p></p>
-</div>
-</div>
-
-</div>
-</div>
+</section>
+</section>
+<section id="frontend-tier---static-web-hosting-15-points" class="level3">
+<h3 class="anchored" data-anchor-id="frontend-tier---static-web-hosting-15-points">2. Frontend Tier - Static Web Hosting (15 points)</h3>
+<section id="primary-hosting" class="level4">
+<h4 class="anchored" data-anchor-id="primary-hosting">Primary Hosting</h4>
+<ul>
+<li>Deploy React application to <strong>Amazon S3</strong></li>
+<li>Enable static website hosting</li>
+<li>Configure S3 bucket policies for public read access</li>
+</ul>
+</section>
+<section id="content-delivery-high-availability" class="level4">
+<h4 class="anchored" data-anchor-id="content-delivery-high-availability">Content Delivery &amp; High Availability</h4>
+<ul>
+<li>Create <strong>CloudFront distribution</strong> pointing to S3 bucket</li>
+<li>Configure CloudFront with:
+<ul>
+<li>Custom error pages</li>
+<li>HTTPS support (CloudFront default certificate acceptable)</li>
+<li>Caching policies for optimal performance</li>
+<li>Multiple origin support (optional: S3 bucket replication)</li>
+</ul></li>
+</ul>
+<p><strong>Deliverable:</strong> Publicly accessible CloudFront URL serving the application</p>
 <hr>
-<div class="question">
-<p>Which tool or technique is most appropriate for [scenario described in this course]?</p>
-<div class="choices">
-<div x-data="{ answer: '' , clear() { this.answer = '' }}">
-
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no1"> <span id="no1" x-show="answer == $el.id" class="badge">✗</span>[Inappropriate tool A]</p><p></p>
-</div>
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no2"> <span id="no2" x-show="answer == $el.id" class="badge">✗</span>[Inappropriate tool B]</p><p></p>
-</div>
-<div class="choice correct-choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="correct"> <span id="correct" x-show="answer == $el.id" class="badge">✓</span>[Write the most appropriate tool here]</p><p></p>
-</div>
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no4"> <span id="no4" x-show="answer == $el.id" class="badge">✗</span>None - this scenario does not require a specific tool</p><p></p>
-</div>
-</div>
-
-</div>
-</div>
+</section>
+</section>
+<section id="backend-tier---application-servers-25-points" class="level3">
+<h3 class="anchored" data-anchor-id="backend-tier---application-servers-25-points">3. Backend Tier - Application Servers (25 points)</h3>
+<section id="ec2-instance-configuration" class="level4">
+<h4 class="anchored" data-anchor-id="ec2-instance-configuration">EC2 Instance Configuration</h4>
+<ul>
+<li>Deploy <strong>minimum 2 EC2 instances</strong> running Spring Boot application</li>
+<li>Instances must be in <strong>different Availability Zones</strong></li>
+<li>Use <strong>Auto Scaling Group (ASG)</strong> with:
+<ul>
+<li>Minimum capacity: 2 instances</li>
+<li>Maximum capacity: 4 instances</li>
+<li>Desired capacity: 2 instances</li>
+<li>Health checks enabled (ELB health check type)</li>
+<li>Launch template or configuration</li>
+</ul></li>
+</ul>
+</section>
+<section id="application-load-balancer-alb" class="level4">
+<h4 class="anchored" data-anchor-id="application-load-balancer-alb">Application Load Balancer (ALB)</h4>
+<ul>
+<li>Create an <strong>Application Load Balancer</strong> in public subnets</li>
+<li>Configure:
+<ul>
+<li>Target Group with backend instances registered</li>
+<li>Health check path: <code>/api/tasks</code></li>
+<li>Cross-zone load balancing enabled</li>
+<li>Listener on port 80 (HTTP)</li>
+<li>Sticky sessions (optional)</li>
+</ul></li>
+</ul>
+</section>
+<section id="auto-scaling-policies-optional-bonus-5-points" class="level4">
+<h4 class="anchored" data-anchor-id="auto-scaling-policies-optional-bonus-5-points">Auto Scaling Policies (Optional Bonus: +5 points)</h4>
+<ul>
+<li>Create scaling policies based on:
+<ul>
+<li>CPU utilization (e.g., scale out at &gt;70%)</li>
+<li>Request count per target</li>
+<li>Custom metrics</li>
+</ul></li>
+</ul>
+<p><strong>Deliverable:</strong> ALB DNS name with functional API endpoints</p>
 <hr>
-<div class="question">
-<p>What would happen if [key step or principle] were omitted from [process]?</p>
-<div class="choices">
-<div x-data="{ answer: '' , clear() { this.answer = '' }}">
-
-<div class="choice correct-choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="correct"> <span id="correct" x-show="answer == $el.id" class="badge">✓</span>[Write the correct consequence here]</p><p></p>
-</div>
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no2"> <span id="no2" x-show="answer == $el.id" class="badge">✗</span>No noticeable difference - the step is redundant</p><p></p>
-</div>
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no3"> <span id="no3" x-show="answer == $el.id" class="badge">✗</span>The process would complete faster with fewer errors</p><p></p>
-</div>
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no4"> <span id="no4" x-show="answer == $el.id" class="badge">✗</span>The output would remain valid but formatted differently</p><p></p>
-</div>
-</div>
-
-</div>
-</div>
+</section>
+</section>
+<section id="database-tier---rds-mysql-20-points" class="level3">
+<h3 class="anchored" data-anchor-id="database-tier---rds-mysql-20-points">4. Database Tier - RDS MySQL (20 points)</h3>
+<section id="rds-configuration" class="level4">
+<h4 class="anchored" data-anchor-id="rds-configuration">RDS Configuration</h4>
+<ul>
+<li>Deploy <strong>Amazon RDS MySQL</strong> instance with:
+<ul>
+<li>Multi-AZ deployment enabled (automatic failover)</li>
+<li>Instance class: db.t3.micro or larger</li>
+<li>Storage: 20GB minimum, with auto-scaling enabled</li>
+<li>Automated backups enabled (retention: 7 days)</li>
+<li>Encryption at rest enabled</li>
+</ul></li>
+</ul>
+</section>
+<section id="high-availability-features" class="level4">
+<h4 class="anchored" data-anchor-id="high-availability-features">High Availability Features</h4>
+<ul>
+<li><strong>Multi-AZ deployment</strong> with synchronous replication</li>
+<li>Automatic failover to standby instance</li>
+<li>Read replica in different AZ (optional bonus: +5 points)</li>
+</ul>
+</section>
+<section id="database-configuration" class="level4">
+<h4 class="anchored" data-anchor-id="database-configuration">Database Configuration</h4>
+<ul>
+<li>Create database <code>taskdb</code></li>
+<li>Configure security group for MySQL port 3306</li>
+<li>Allow inbound traffic only from backend security group</li>
+<li>Configure connection pooling in Spring Boot application</li>
+</ul>
+<p><strong>Deliverable:</strong> RDS endpoint accessible from backend instances only</p>
 <hr>
-<div class="question">
-<p>Which of the following is an example of [concept] as discussed in this course?</p>
-<div class="choices">
-<div x-data="{ answer: '' , clear() { this.answer = '' }}">
-
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no1"> <span id="no1" x-show="answer == $el.id" class="badge">✗</span>[Incorrect example A]</p><p></p>
-</div>
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no2"> <span id="no2" x-show="answer == $el.id" class="badge">✗</span>[Incorrect example B]</p><p></p>
-</div>
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no3"> <span id="no3" x-show="answer == $el.id" class="badge">✗</span>[Incorrect example C]</p><p></p>
-</div>
-<div class="choice correct-choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="correct"> <span id="correct" x-show="answer == $el.id" class="badge">✓</span>[Write the correct example here]</p><p></p>
-</div>
-</div>
-
-</div>
-</div>
+</section>
+</section>
+<section id="security-implementation-25-points" class="level3">
+<h3 class="anchored" data-anchor-id="security-implementation-25-points">5. Security Implementation (25 points)</h3>
+<section id="bastion-host-architecture" class="level4">
+<h4 class="anchored" data-anchor-id="bastion-host-architecture">Bastion Host Architecture</h4>
+<ul>
+<li>Deploy <strong>bastion host</strong> (jump server) in public subnet</li>
+<li>Use t2.micro instance with Amazon Linux 2023 or Ubuntu</li>
+<li>Configure security group:
+<ul>
+<li>Inbound: SSH (port 22) from your IP only</li>
+<li>Outbound: SSH to private subnet instances</li>
+</ul></li>
+</ul>
+</section>
+<section id="ssh-access-pattern" class="level4">
+<h4 class="anchored" data-anchor-id="ssh-access-pattern">SSH Access Pattern</h4>
+<ul>
+<li>Backend EC2 instances must be in <strong>private subnets only</strong></li>
+<li>SSH access to backend instances <strong>only through bastion host</strong></li>
+<li>Implement SSH agent forwarding or key distribution</li>
+<li>Document SSH connection procedure</li>
+</ul>
+</section>
+<section id="security-groups" class="level4">
+<h4 class="anchored" data-anchor-id="security-groups">Security Groups</h4>
+<p>Create and configure security groups for:</p>
+<p><strong>Bastion Host SG:</strong> - Inbound: SSH (22) from your IP - Outbound: SSH (22) to Backend SG</p>
+<p><strong>ALB Security Group:</strong> - Inbound: HTTP (80) from 0.0.0.0/0 - Outbound: HTTP (8080) to Backend SG</p>
+<p><strong>Backend EC2 Security Group:</strong> - Inbound: SSH (22) from Bastion SG - Inbound: HTTP (8080) from ALB SG - Outbound: MySQL (3306) to RDS SG - Outbound: HTTPS (443) for internet access (via NAT)</p>
+<p><strong>RDS Security Group:</strong> - Inbound: MySQL (3306) from Backend SG only - No outbound rules needed</p>
+</section>
+<section id="iam-roles-optional-bonus-5-points" class="level4">
+<h4 class="anchored" data-anchor-id="iam-roles-optional-bonus-5-points">IAM Roles (Optional Bonus: +5 points)</h4>
+<ul>
+<li>Create IAM role for EC2 instances</li>
+<li>Attach policies for CloudWatch, SSM, S3 access</li>
+<li>Use Systems Manager Session Manager as alternative to SSH</li>
+</ul>
+<p><strong>Deliverable:</strong> Security group configuration document and SSH access demonstration</p>
 <hr>
-<div class="question">
-<p>A practitioner encounters [realistic scenario]. Based on this course, what is the best course of action?</p>
-<div class="choices">
-<div x-data="{ answer: '' , clear() { this.answer = '' }}">
+</section>
+</section>
+<section id="application-configuration-10-points" class="level3">
+<h3 class="anchored" data-anchor-id="application-configuration-10-points">6. Application Configuration (10 points)</h3>
+<section id="backend-configuration" class="level4">
+<h4 class="anchored" data-anchor-id="backend-configuration">Backend Configuration</h4>
+<p>Update Spring Boot <code>application.properties</code>:</p>
+<pre class="properties"><code>spring.datasource.url=jdbc:mysql://RDS-ENDPOINT:3306/taskdb
+server.port=8080
+# Add connection pool configuration
+spring.datasource.hikari.maximum-pool-size=10
+spring.datasource.hikari.minimum-idle=5</code></pre>
+</section>
+<section id="frontend-configuration" class="level4">
+<h4 class="anchored" data-anchor-id="frontend-configuration">Frontend Configuration</h4>
+<p>Update React application to use ALB endpoint:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> [apiUrl<span class="op">,</span> setApiUrl] <span class="op">=</span> <span class="fu">useState</span>(<span class="st">'http://YOUR-ALB-DNS/api'</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="health-monitoring" class="level4">
+<h4 class="anchored" data-anchor-id="health-monitoring">Health Monitoring</h4>
+<ul>
+<li>Configure ALB health checks</li>
+<li>Implement application health endpoint (bonus)</li>
+<li>Set up CloudWatch alarms (bonus: +5 points)</li>
+</ul>
+<hr>
+</section>
+</section>
+</section>
+<section id="architecture-requirements-summary" class="level2">
+<h2 class="anchored" data-anchor-id="architecture-requirements-summary">Architecture Requirements Summary</h2>
+<section id="mandatory-components-checklist" class="level3">
+<h3 class="anchored" data-anchor-id="mandatory-components-checklist">Mandatory Components Checklist</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Custom VPC with minimum 2 Availability Zones</label></li>
+<li><label><input type="checkbox">Public and private subnets in each AZ</label></li>
+<li><label><input type="checkbox">Internet Gateway and NAT Gateways</label></li>
+<li><label><input type="checkbox">S3 bucket with static website hosting</label></li>
+<li><label><input type="checkbox">CloudFront distribution for frontend</label></li>
+<li><label><input type="checkbox">Application Load Balancer in public subnets</label></li>
+<li><label><input type="checkbox">Auto Scaling Group with minimum 2 backend instances</label></li>
+<li><label><input type="checkbox">EC2 instances in private subnets across multiple AZs</label></li>
+<li><label><input type="checkbox">RDS MySQL with Multi-AZ deployment</label></li>
+<li><label><input type="checkbox">Bastion host in public subnet</label></li>
+<li><label><input type="checkbox">Proper security group configuration</label></li>
+<li><label><input type="checkbox">SSH access only through bastion host</label></li>
+<li><label><input type="checkbox">Functional application demonstrating CRUD operations</label></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="deliverables" class="level2">
+<h2 class="anchored" data-anchor-id="deliverables">Deliverables</h2>
+<section id="architecture-documentation-30-points" class="level3">
+<h3 class="anchored" data-anchor-id="architecture-documentation-30-points">1. Architecture Documentation (30 points)</h3>
+<p>Submit a technical report (2000-3000 words) including:</p>
+<p><strong>a) Architecture Diagram</strong> - Comprehensive network diagram showing: - VPC, subnets, and Availability Zones - All EC2 instances, RDS, and load balancers - Security groups and traffic flow - Bastion host access pattern - Use AWS architecture icons (draw.io, Lucidchart, or CloudCraft)</p>
+<p><strong>b) Component Description</strong> - Detailed explanation of each AWS service used - Justification for architectural decisions - Configuration details for each component</p>
+<p><strong>c) High Availability Analysis</strong> - Explain how your architecture achieves fault tolerance - Describe failover scenarios: - Backend instance failure - Availability Zone failure - Database primary failure - Recovery Time Objective (RTO) and Recovery Point Objective (RPO)</p>
+<p><strong>d) Security Analysis</strong> - Network security implementation - Access control mechanisms - Data protection (encryption at rest/in transit) - Compliance with principle of least privilege</p>
+<p><strong>e) Scalability Considerations</strong> - How architecture handles increased load - Bottlenecks and limitations - Future improvements</p>
+</section>
+<section id="configuration-files-10-points" class="level3">
+<h3 class="anchored" data-anchor-id="configuration-files-10-points">2. Configuration Files (10 points)</h3>
+<p>Submit all configuration files: - Spring Boot <code>application.properties</code> - Security group rules (JSON export or documentation) - Auto Scaling Group configuration - User data scripts (if used) - Any custom scripts created</p>
+</section>
+<section id="deployment-guide-15-points" class="level3">
+<h3 class="anchored" data-anchor-id="deployment-guide-15-points">3. Deployment Guide (15 points)</h3>
+<p>Create a step-by-step deployment guide including: - Prerequisites and required tools - AWS resource creation sequence - Configuration commands and scripts - Verification steps for each component - Troubleshooting common issues</p>
+</section>
+<section id="video-demonstration-15-points" class="level3">
+<h3 class="anchored" data-anchor-id="video-demonstration-15-points">4. Video Demonstration (15 points)</h3>
+<p>Record a 10-15 minute video demonstrating:</p>
+<p><strong>Functional Requirements:</strong> 1. Application access via CloudFront URL 2. CRUD operations (create, read, update, delete tasks) 3. Data persistence verification</p>
+<p><strong>High Availability Testing:</strong> 4. SSH access through bastion host 5. Stop one backend EC2 instance - application continues functioning 6. Demonstrate ALB distributing traffic to remaining instance 7. Restart stopped instance - show auto-recovery</p>
+<p><strong>Security Demonstration:</strong> 8. Attempt direct SSH to backend instance (should fail) 9. Successful SSH via bastion host 10. Show security group configurations in AWS console</p>
+<p><strong>Optional Bonus Demonstrations (+5 points each):</strong> - Trigger auto-scaling event - Simulate RDS failover - Monitor CloudWatch metrics/alarms</p>
+</section>
+<section id="aws-console-screenshots-10-points" class="level3">
+<h3 class="anchored" data-anchor-id="aws-console-screenshots-10-points">5. AWS Console Screenshots (10 points)</h3>
+<p>Submit screenshots showing: - VPC with all subnets and route tables - EC2 instances running in multiple AZs - Auto Scaling Group configuration - Load Balancer with healthy targets - RDS Multi-AZ deployment status - Security groups configuration - CloudFront distribution - Resource tagging (all resources properly tagged)</p>
+<hr>
+</section>
+</section>
+<section id="grading-rubric" class="level2">
+<h2 class="anchored" data-anchor-id="grading-rubric">Grading Rubric</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 37%">
+<col style="width: 27%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Points</th>
+<th>Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Network Architecture</strong></td>
+<td>25</td>
+<td>VPC design, subnets, AZs, routing</td>
+</tr>
+<tr class="even">
+<td><strong>Frontend Deployment</strong></td>
+<td>15</td>
+<td>S3, CloudFront, accessibility</td>
+</tr>
+<tr class="odd">
+<td><strong>Backend Deployment</strong></td>
+<td>25</td>
+<td>EC2, ASG, ALB, multi-AZ</td>
+</tr>
+<tr class="even">
+<td><strong>Database Deployment</strong></td>
+<td>20</td>
+<td>RDS, Multi-AZ, security</td>
+</tr>
+<tr class="odd">
+<td><strong>Security Implementation</strong></td>
+<td>25</td>
+<td>Bastion, security groups, SSH access</td>
+</tr>
+<tr class="even">
+<td><strong>Application Configuration</strong></td>
+<td>10</td>
+<td>Proper integration, functionality</td>
+</tr>
+<tr class="odd">
+<td><strong>Architecture Documentation</strong></td>
+<td>30</td>
+<td>Diagram, analysis, completeness</td>
+</tr>
+<tr class="even">
+<td><strong>Configuration Files</strong></td>
+<td>10</td>
+<td>Accuracy, completeness</td>
+</tr>
+<tr class="odd">
+<td><strong>Deployment Guide</strong></td>
+<td>15</td>
+<td>Clarity, reproducibility</td>
+</tr>
+<tr class="even">
+<td><strong>Video Demonstration</strong></td>
+<td>15</td>
+<td>Functionality, HA testing</td>
+</tr>
+<tr class="odd">
+<td><strong>Screenshots</strong></td>
+<td>10</td>
+<td>Completeness, clarity</td>
+</tr>
+<tr class="even">
+<td><strong>Bonus Points</strong></td>
+<td>+25 max</td>
+<td>Auto-scaling, read replicas, CloudWatch, IAM</td>
+</tr>
+<tr class="odd">
+<td><strong>TOTAL</strong></td>
+<td><strong>200</strong></td>
+<td><strong>(+25 bonus available)</strong></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="submission-requirements" class="level2">
+<h2 class="anchored" data-anchor-id="submission-requirements">Submission Requirements</h2>
+<section id="submission-format" class="level3">
+<h3 class="anchored" data-anchor-id="submission-format">Submission Format</h3>
+<ul>
+<li>Single ZIP file named: <code>StudentID_AWSAssignment.zip</code></li>
+<li>Contents:
+<ul>
+<li><code>/documentation</code> - PDF report</li>
+<li><code>/configs</code> - All configuration files</li>
+<li><code>/screenshots</code> - PNG/JPG images</li>
+<li><code>/deployment-guide</code> - Markdown or PDF</li>
+<li><code>/video</code> - MP4 file or YouTube link</li>
+<li><code>README.md</code> - Resource URLs and credentials</li>
+</ul></li>
+</ul>
+</section>
+<section id="submission-details" class="level3">
+<h3 class="anchored" data-anchor-id="submission-details">Submission Details</h3>
+<ul>
+<li><strong>Due Date:</strong> [Insert Date - 3-4 weeks from assignment start]</li>
+<li><strong>Late Penalty:</strong> 10% per day (max 3 days)</li>
+<li><strong>Submission Method:</strong> [Learning Management System]</li>
+</ul>
+</section>
+<section id="resource-access" class="level3">
+<h3 class="anchored" data-anchor-id="resource-access">Resource Access</h3>
+<p>Provide in README.md: - CloudFront URL - ALB DNS name - Bastion host public IP - AWS account ID (for grading access) - Region used - Any credentials needed for testing</p>
+<hr>
+</section>
+</section>
+<section id="important-notes" class="level2">
+<h2 class="anchored" data-anchor-id="important-notes">Important Notes</h2>
+<section id="aws-learner-lab-constraints" class="level3">
+<h3 class="anchored" data-anchor-id="aws-learner-lab-constraints">AWS Learner Lab Constraints</h3>
+<ul>
+<li><strong>Budget:</strong> Monitor your lab credit usage</li>
+<li><strong>Session Time:</strong> 4-hour active sessions</li>
+<li><strong>Persistence:</strong> Resources persist between sessions</li>
+<li><strong>Limitations:</strong> Some services may have restrictions</li>
+<li><strong>Region:</strong> Use us-east-1 (N. Virginia) unless specified</li>
+</ul>
+</section>
+<section id="cost-management" class="level3">
+<h3 class="anchored" data-anchor-id="cost-management">Cost Management</h3>
+<ul>
+<li>Use smallest instance types (t2.micro, t3.micro)</li>
+<li>Stop/start instances when not actively working</li>
+<li>Delete unused resources promptly</li>
+<li>Monitor billing dashboard regularly</li>
+<li><strong>Alert:</strong> Set up budget alerts if available</li>
+</ul>
+</section>
+<section id="academic-integrity" class="level3">
+<h3 class="anchored" data-anchor-id="academic-integrity">Academic Integrity</h3>
+<ul>
+<li>This is an individual assignment</li>
+<li>Collaboration on concepts is allowed, but implementations must be unique</li>
+<li>Cite any external resources or tutorials used</li>
+<li>Use of AI assistants (ChatGPT, Claude) must be disclosed in documentation</li>
+<li>Plagiarism will result in zero marks and academic misconduct reporting</li>
+</ul>
+</section>
+<section id="getting-help" class="level3">
+<h3 class="anchored" data-anchor-id="getting-help">Getting Help</h3>
+<ul>
+<li><strong>Office Hours:</strong> [Schedule]</li>
+<li><strong>Discussion Forum:</strong> For conceptual questions only (no sharing of configurations)</li>
+<li><strong>AWS Documentation:</strong> https://docs.aws.amazon.com/</li>
+<li><strong>Technical Issues:</strong> Contact instructor within 24 hours</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="assessment-criteria" class="level2">
+<h2 class="anchored" data-anchor-id="assessment-criteria">Assessment Criteria</h2>
+<section id="excellent-90-100" class="level3">
+<h3 class="anchored" data-anchor-id="excellent-90-100">Excellent (90-100%)</h3>
+<ul>
+<li>All components deployed correctly with high availability</li>
+<li>Comprehensive documentation with clear diagrams</li>
+<li>Sophisticated understanding of AWS services and HA patterns</li>
+<li>Creative solutions to challenges</li>
+<li>All bonus features implemented</li>
+</ul>
+</section>
+<section id="very-good-80-89" class="level3">
+<h3 class="anchored" data-anchor-id="very-good-80-89">Very Good (80-89%)</h3>
+<ul>
+<li>All mandatory components functional</li>
+<li>Good documentation with minor gaps</li>
+<li>Clear understanding of HA principles</li>
+<li>Some bonus features implemented</li>
+</ul>
+</section>
+<section id="good-70-79" class="level3">
+<h3 class="anchored" data-anchor-id="good-70-79">Good (70-79%)</h3>
+<ul>
+<li>All mandatory components present</li>
+<li>Basic documentation provided</li>
+<li>Application functions but may have minor HA issues</li>
+<li>Demonstrates adequate cloud knowledge</li>
+</ul>
+</section>
+<section id="satisfactory-60-69" class="level3">
+<h3 class="anchored" data-anchor-id="satisfactory-60-69">Satisfactory (60-69%)</h3>
+<ul>
+<li>Most components deployed</li>
+<li>Documentation incomplete or unclear</li>
+<li>Application works but lacks proper HA implementation</li>
+<li>Basic cloud concepts understood</li>
+</ul>
+</section>
+<section id="fail-60" class="level3">
+<h3 class="anchored" data-anchor-id="fail-60">Fail (&lt;60%)</h3>
+<ul>
+<li>Missing critical components</li>
+<li>Application non-functional</li>
+<li>Poor documentation</li>
+<li>Lack of understanding of core concepts</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="learning-resources" class="level2">
+<h2 class="anchored" data-anchor-id="learning-resources">Learning Resources</h2>
+<section id="aws-documentation" class="level3">
+<h3 class="anchored" data-anchor-id="aws-documentation">AWS Documentation</h3>
+<ul>
+<li><a href="https://aws.amazon.com/architecture/well-architected/">AWS Well-Architected Framework</a></li>
+<li><a href="https://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/high-availability-and-scalability-on-aws.html">High Availability Architecture</a></li>
+<li><a href="https://docs.aws.amazon.com/vpc/">VPC Documentation</a></li>
+<li><a href="https://docs.aws.amazon.com/elasticloadbalancing/">Elastic Load Balancing</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html">Amazon RDS Multi-AZ</a></li>
+</ul>
+</section>
+<section id="recommended-tutorials" class="level3">
+<h3 class="anchored" data-anchor-id="recommended-tutorials">Recommended Tutorials</h3>
+<ul>
+<li>AWS Solutions Architect Associate certification materials</li>
+<li>AWS Architecture Center case studies</li>
+<li>Linux Academy / A Cloud Guru courses (if available)</li>
+</ul>
+</section>
+<section id="tools" class="level3">
+<h3 class="anchored" data-anchor-id="tools">Tools</h3>
+<ul>
+<li>AWS CLI for automation (optional)</li>
+<li>draw.io or Lucidchart for diagrams</li>
+<li>PuTTY or OpenSSH for SSH access</li>
+<li>MySQL Workbench for database access (optional)</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="frequently-asked-questions" class="level2">
+<h2 class="anchored" data-anchor-id="frequently-asked-questions">Frequently Asked Questions</h2>
+<p><strong>Q: Can I use services not listed in requirements?</strong><br>
+A: Yes, as long as they enhance HA/security and are documented with justification.</p>
+<p><strong>Q: What if my Learner Lab credits run out?</strong><br>
+A: Contact instructor immediately. Budget management is part of the assessment.</p>
+<p><strong>Q: Can I deploy in a region other than us-east-1?</strong><br>
+A: Only with instructor approval. Ensure all services are available in chosen region.</p>
+<p><strong>Q: Is HTTPS required for CloudFront/ALB?</strong><br>
+A: HTTP is acceptable for this assignment. HTTPS with ACM certificates is bonus.</p>
+<p><strong>Q: How do I demonstrate RDS failover?</strong><br>
+A: Multi-AZ is sufficient. Actual failover testing is optional bonus (document carefully).</p>
+<p><strong>Q: Can I use pre-built AMIs for backend?</strong><br>
+A: Yes, but document the AMI source and configuration changes made.</p>
+<hr>
+</section>
+<section id="timeline-recommendation" class="level2">
+<h2 class="anchored" data-anchor-id="timeline-recommendation">Timeline Recommendation</h2>
+<p><strong>Week 1:</strong> - Design architecture - Create VPC, subnets, and networking components - Set up bastion host</p>
+<p><strong>Week 2:</strong> - Deploy and configure RDS Multi-AZ - Launch backend EC2 instances - Configure Auto Scaling and Load Balancer</p>
+<p><strong>Week 3:</strong> - Deploy frontend to S3 and CloudFront - Integrate all tiers - Test functionality and high availability</p>
+<p><strong>Week 4:</strong> - Finalize documentation - Create video demonstration - Review and submit</p>
+<hr>
+</section>
+<section id="contact-information" class="level2">
+<h2 class="anchored" data-anchor-id="contact-information">Contact Information</h2>
+<p><strong>Instructor:</strong> [Name]<br>
+<strong>Email:</strong> [Email]<br>
+<strong>Office Hours:</strong> [Schedule]<br>
+<strong>Lab Support:</strong> [Contact]</p>
+<hr>
+<p><strong>Good luck with your deployment! This assignment will give you hands-on experience with enterprise cloud architecture patterns used by organizations worldwide.</strong></p>
 
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no1"> <span id="no1" x-show="answer == $el.id" class="badge">✗</span>Escalate immediately without attempting any initial steps</p><p></p>
-</div>
-<div class="choice correct-choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="correct"> <span id="correct" x-show="answer == $el.id" class="badge">✓</span>[Write the correct course of action here]</p><p></p>
-</div>
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no3"> <span id="no3" x-show="answer == $el.id" class="badge">✗</span>Apply [incorrect approach] and document the outcome</p><p></p>
-</div>
-<div class="choice">
-<p></p><p><input class="form-check-input" type="radio" x-model="answer" value="no4"> <span id="no4" x-show="answer == $el.id" class="badge">✗</span>Defer the decision until more data is available</p><p></p>
-</div>
-</div>
 
-</div>
-</div>
-
-
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1058,9 +1733,6 @@ ul.task-list li input[type="checkbox"] {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../assessments/03-assessment.html" class="pagination-link" aria-label="Assessment 3">
-        <span class="nav-page-text">Assessment 3</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
