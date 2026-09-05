@@ -285,10 +285,10 @@ Mr.&nbsp;John Jennings
 <ul>
 <li><strong>Unit 4: Secure Applications and Architectures</strong>
 <ul>
-<li><pre><code>Shared Security Model</code></pre></li>
-<li><pre><code>Users, Groups, Roles, IAM</code></pre></li>
-<li><pre><code>Authentication, Authorisation</code></pre></li>
-<li><pre><code>Bastion Hosts,</code></pre></li>
+<li>Shared Security Model</li>
+<li>Users, Groups, Roles, IAM</li>
+<li>Authentication, Authorisation</li>
+<li>Bastion Hosts,</li>
 </ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
@@ -296,7 +296,7 @@ Mr.&nbsp;John Jennings
 <li><strong>Unit 5: Cost-Optimised Architectures</strong>
 <ul>
 <li>High Availability</li>
-<li><pre><code>Load-balancing</code></pre></li>
+<li>Load-balancing</li>
 </ul></li>
 </ul>
 </div></div>
@@ -507,13 +507,587 @@ Mr.&nbsp;John Jennings
           display:block!important;
       }</style></aside>
 </section>
-<section id="thank-you" class="slide level2">
-<h2>Thank You</h2>
-<p>Corrections, feedback, or questions?</p>
-<p>email: john.jennings@tus.ie</p>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="aca-m02---welcome-to-aws-academy-cloud-architecting" class="title-slide slide level1 center">
+<h1>ACA M02 - Welcome to AWS Academy Cloud Architecting</h1>
+
 </section>
-<section id="study-questions" class="slide level2">
-<h2>Study Questions</h2>
+<section id="lecture-objectives" class="slide level2">
+<h2>Lecture Objectives</h2>
+<p>This module prepares you to:</p>
+<ul>
+<li>Recognise the basic elements of the café business case.</li>
+<li>Describe the role of a cloud architect.</li>
+<li>Define cloud architecture.</li>
+<li>Describe how to design and evaluate architectures using the AWS Well-Architected Framework.</li>
+<li>Explain best practices for building solutions on Amazon Web Services (AWS).</li>
+<li>Describe how to make informed decisions about where to place AWS resources.</li>
+</ul>
+</section>
+<section id="lecture-overview-1" class="slide level2">
+<h2>Lecture Overview</h2>
+<p><strong>Presentation sections:</strong></p>
+<ul>
+<li>Café business case introduction</li>
+<li>Roles in cloud computing</li>
+<li>Cloud Architecting</li>
+<li>AWS Well-Architected Framework</li>
+<li>Best practices for building solutions on AWS</li>
+<li>AWS Global Infrastructure</li>
+</ul>
+</section>
+<section id="café-business-case-introduction" class="slide level2">
+<h2>Café Business Case Introduction</h2>
+<p>Welcome to AWS Academy Cloud Architecting</p>
+<aside class="notes">
+<p>The challenge labs in this course are built around a fictional business case. The business case provides a way to explore cloud computing topics in the context of relatable business needs. This scenario is intended to provide an example of the real-world applicability of technical concepts that you will learn. This section introduces the business case.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="café-business-scenario" class="slide level2">
+<h2>Café Business Scenario</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Frank and Martha opened a café and bakery in their retirement. Their staff and AWS consultants (who are also customers) are helping them use the cloud to address business needs.</p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/w01/cafe.jpg"></p>
+</div></div>
+</section>
+<section id="café-business-owners-and-staff" class="slide level2">
+<h2>Café Business Owners and Staff</h2>
+<div class="columns">
+<div class="column" style="width:25%;">
+<p><img data-src="images/w01/frank.jpg" style="width:80.0%"></p>
+<p><strong>Frank:</strong></p>
+<ul>
+<li>Co-owner, retired from the navy, likes to bake, non-technical</li>
+</ul>
+</div><div class="column" style="width:25%;">
+<p><img data-src="images/w01/martha.png" style="width:80.0%"></p>
+<p><strong>Martha:</strong></p>
+<ul>
+<li>Co-owner, retired accountant, knows spreadsheets, otherwise non-technical</li>
+</ul>
+</div><div class="column" style="width:25%;">
+<p><img data-src="images/w01/sofia.png" style="width:80.0%"></p>
+<p><strong>Sofía:</strong></p>
+<ul>
+<li>Daughter, supply chain manager, future business admin student, has programming skills</li>
+</ul>
+</div><div class="column" style="width:25%;">
+<p><img data-src="images/w01/nikhil.png" style="width:80.0%"></p>
+<p><strong>Nikhil:</strong></p>
+<ul>
+<li>Employee, visual design skills, interested in cloud computing, may take on more responsibilities</li>
+</ul>
+</div></div>
+</section>
+<section id="café-visitors-who-are-aws-consultants" class="slide level2">
+<h2>Café Visitors Who Are AWS Consultants</h2>
+<div class="columns">
+<div class="column" style="width:33%;">
+<p><img data-src="images/w01/olivia.png" style="width:50.0%"></p>
+<p><strong>Olivia:</strong></p>
+<ul>
+<li>AWS solutions architect, speciality in databases and network technologies</li>
+</ul>
+</div><div class="column" style="width:33%;">
+<p><img data-src="images/w01/faythe.png" style="width:50.0%"></p>
+<p><strong>Faythe:</strong></p>
+<ul>
+<li>Developer, experience with AWS programming interfaces, knowledgeable about cloud security</li>
+</ul>
+</div><div class="column" style="width:33%;">
+<p><img data-src="images/w01/mateo.jpg" style="width:50.0%"></p>
+<p><strong>Mateo:</strong></p>
+<ul>
+<li>Systems administrator/engineer, automates and creates repeatable solutions, values backups and disaster recovery</li>
+</ul>
+</div></div>
+</section>
+<section id="the-evolving-café-architecture" class="slide level2 nostretch">
+<h2>The Evolving Café Architecture</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 47%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ver</th>
+<th>Business Reason for Update</th>
+<th>Technical Requirements and Architecture Update</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>V1</td>
+<td>Build a static website for a small business.</td>
+<td>Host the website on Amazon S3.</td>
+</tr>
+<tr class="even">
+<td>V2</td>
+<td>Support dynamic content and on-line ordering.</td>
+<td>Deploy web app and database on Amazon EC2.</td>
+</tr>
+<tr class="odd">
+<td>V3</td>
+<td>Reduce effort to maintain and secure database.</td>
+<td>Separate web and database layers; migrate DB to Amazon RDS on private subnet.</td>
+</tr>
+<tr class="even">
+<td>V4</td>
+<td>Enhance web app security.</td>
+<td>Use Amazon VPC to configure and secure subnets.</td>
+</tr>
+<tr class="odd">
+<td>V5</td>
+<td>Handle increased traffic, ensure high availability.</td>
+<td>Add load balancer, auto scaling, distribute across two Availability Zones.</td>
+</tr>
+<tr class="even">
+<td>V6</td>
+<td>Automate deployments across Regions.</td>
+<td>Use CloudFormation templates for network/app layers; deploy to another Region.</td>
+</tr>
+<tr class="odd">
+<td>V7</td>
+<td>Add reporting, reduce operational burden, improve performance/cost.</td>
+<td>Deploy Lambda functions to connect to RDS and generate scheduled reports.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="roles-in-cloud-computing" class="slide level2">
+<h2>Roles in Cloud Computing</h2>
+</section>
+<section id="it-professional" class="slide level2">
+<h2>IT Professional</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Skills/Responsibilities:</strong></p>
+<ul>
+<li>Generalist, may manage applications and production environments</li>
+<li>Highly technical, may specialize (security, storage)</li>
+<li>Job titles: IT administrator, systems administrator, network administrator</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/w01/it-pro.jpg" style="width:60.0%"></p>
+<figcaption>IT Professional</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="it-leader" class="slide level2">
+<h2>IT Leader</h2>
+<div class="colums">
+<div class="column" style="width:50%;">
+<p><strong>Skills/Responsibilities:</strong></p>
+<ul>
+<li>Lead IT teams, manage operations and budgets, choose technologies</li>
+<li>Hands-on early, then delegate</li>
+<li>Job titles: IT manager, IT director, IT supervisor</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/w01/it-lead.jpg" style="width:60.0%"></p>
+<figcaption>IT Leader</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="developer" class="slide level2">
+<h2>Developer</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Skills/Responsibilities:</strong></p>
+<ul>
+<li>Write/test/fix code, work at application level, use APIs/SDKs</li>
+<li>May specialize (security, storage)</li>
+<li>Job titles: Software developer, system architect, software development manager</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/w01/it-developer.jpg" style="width:60.0%"></p>
+<figcaption>Developer</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="devops-engineer" class="slide level2">
+<h2>DevOps Engineer</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Skills/Responsibilities:</strong></p>
+<ul>
+<li>Build infrastructure, follow cloud architect guidelines, improve deployments</li>
+<li>Job titles: DevOps engineer, build engineer, reliability engineer</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/w01/devops.jpg" style="width:60.0%"></p>
+<figcaption>DevOps Engineer</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="cloud-architect" class="slide level2">
+<h2>Cloud Architect</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Skills/Responsibilities:</strong></p>
+<ul>
+<li>Stay up to date, help select technologies, provide documentation/processes/tools</li>
+<li>Enable developer innovation, resolve challenges (cost, performance, reliability, security)</li>
+<li>Job titles: Cloud architect, systems engineer, systems analyst</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/w01/architect.jpg" style="width:60.0%"></p>
+<figcaption>Cloud Architect</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="aca-m02---introducing-cloud-architecting" class="title-slide slide level1 center">
+<h1>ACA M02 - Introducing Cloud Architecting</h1>
+
+</section>
+<section id="as-a-cloud-architect-designing-aws-architectures" class="slide level2">
+<h2>As a cloud architect designing AWS architectures</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/w01/architect.jpg" style="width:60.0%"></p>
+<figcaption>Cloud architect</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:70%;">
+<ul>
+<li>I need to understand the practice of applying cloud best practices to a solution that uses cloud services and features to meet an organization’s technical needs and business use cases.</li>
+<li>I need to evaluate an architecture with the AWS Well-Architected Framework.</li>
+<li>I need to apply best practices to building solutions on AWS.</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>This slide asks you to take the perspective of a cloud architect. Review these considerations as you progress through this module, remembering that the cloud architect should work backward from the business need to design the best architecture for a specific use case.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="aws-and-cloud-computing" class="slide level2">
+<h2>AWS and Cloud Computing</h2>
+
+<img data-src="images/w01/aws-history.png" class="r-stretch quarto-figure-center"><p class="caption">AWS and Cloud Computing</p></section>
+<section id="cloud-architecture" class="slide level2">
+<h2>Cloud Architecture</h2>
+
+<img data-src="images/w01/aws-cloudarchitecture.png" class="r-stretch quarto-figure-center"><p class="caption">Cloud Architecture</p></section>
+<section id="roles-of-a-cloud-architect" class="slide level2">
+<h2>Roles of a cloud Architect</h2>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Plan</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Set technical cloud strategy with business leads.</li>
+<li>Analyse solutions for business needs and requirements.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Research</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Investigate cloud services specifications and workload requirements.</li>
+<li>Review existing workload architectures.</li>
+<li>Design prototype solutions.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Build</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Design the transformation roadmap with milestones, work streams, and owners.</li>
+<li>Manage the adoption and migration.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="key-takeaways" class="slide level2">
+<h2>Key Takeaways</h2>
+<ul>
+<li>Cloud architecture is the practice of applying cloud characteristics to a solution that uses cloud services and features to meet an organization’s technical needs and business use cases.</li>
+<li>You can use AWS services to create highly available, scalable, and reliable architectures.</li>
+<li>Cloud architects are responsible for managing an organization’s cloud computing architecture.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="aws-well-architected-framework" class="title-slide slide level1 center">
+<h1>AWS Well-Architected Framework</h1>
+
+</section>
+<section id="pillars-of-the-aws-well-architected-framework" class="slide level2">
+<h2>Pillars of the AWS Well-Architected Framework</h2>
+
+<img data-src="images/w01/waf-pillars.png" class="r-stretch quarto-figure-center"><p class="caption">Pillars of the AWS Well-Architected Framework</p><aside class="notes">
+<p>The AWS Well-Architected Framework is a guide that provides a consistent approach to evaluate cloud architectures. It also provides guidance to help implement designs. It documents a set of foundational questions and best practices you can use to understand if a specific architecture aligns well with cloud best practices. AWS developed this framework after reviewing thousands of customer architectures on AWS.</p>
+<p>The AWS Well-Architected Framework is organized into six pillars: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability.</p>
+<p>You revisit the pillars of the AWS Well-Architected Framework in each of the modules of this course.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="operational-excellence-pillar" class="slide level2">
+<h2>Operational Excellence pillar</h2>
+<ul>
+<li>Run and monitor systems that deliver business value.</li>
+<li>Continually improve supporting processes and procedures.</li>
+<li>View the entire workload as code.</li>
+</ul>
+<aside class="notes">
+<p>The Operational Excellence pillar addresses the ability to run systems and gain insight into their operations to deliver business value. It also addresses the ability to continuously improve supporting processes and procedures.</p>
+<p>When you design a workload for operations, you must be aware of how it will be deployed, updated, and operated. Implement engineering practices that align with defect reductions and quick, safe fixes. Make observation possible with logging, instrumentation, and business and technical metrics so you can gain insight into what is happening inside your architecture.</p>
+<p>In AWS, you can view your entire workload (applications, infrastructure, policies, governance, and operations) as code. You can define and update all part of your workload using code. This means you can apply the same engineering discipline that you use for application code to every element of your stack. It is recommended that you invest in implementing operations activities as code to maximize productivity, minimize error rates, and set up automated responses.&nbsp;</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="security-pillar" class="slide level2">
+<h2>Security pillar</h2>
+<ul>
+<li>Implement a strong identity foundation.</li>
+<li>Maintain traceability.</li>
+<li>Apply security at all layers.</li>
+<li>Implement risk assessment and mitigation strategies.</li>
+</ul>
+<aside class="notes">
+<p>The Security pillar addresses the ability to protect information, systems, and assets while delivering business value through risk assessments and mitigation strategies.</p>
+<p>Your architecture will present a much stronger security presence if you implement a strong identity foundation, use and maintain traceability, apply security at all layers, automate security best practices, and protect data in transit and at rest. Implementing these security principles helps you prepare for security events.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="reliability-pillar" class="slide level2">
+<h2>Reliability pillar</h2>
+<ul>
+<li>Recover quickly.</li>
+<li>Dynamically meet compute demand.</li>
+<li>Mitigate disruptions.</li>
+</ul>
+<aside class="notes">
+<p>The Reliability pillar addresses the ability of a system to recover from infrastructure or service disruptions and dynamically acquire computing resources to meet demand. It also addresses the ability of a system to mitigate disruptions, such as misconfigurations or transient network issues.</p>
+<p>It can be difficult to ensure reliability in a traditional environment. Issues arise from single points of failure, lack of automation, and lack of elasticity. By applying the best practices outlined in the Reliability pillar, you can prevent many of these issues. The Reliability pillar helps you and your customers have a properly designed architecture with respect to high availability, fault tolerance, and overall redundancy.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="performance-efficiency-pillar" class="slide level2">
+<h2>Performance Efficiency pillar</h2>
+<ul>
+<li>Choose and maintain efficient resources.</li>
+<li>Democratize advanced technologies.</li>
+<li>Employ mechanical Sympathy.</li>
+</ul>
+<aside class="notes">
+<p>When you consider performance, you want to maximize your performance by using computation resources efficiently. You also want to maintain that efficiency as the demand changes.</p>
+<p>It is also important to democratize advanced technologies. In situations where technology is difficult to implement yourself, consider using a vendor. By implementing the technology for you, the vendor handles the complexity and the knowledge, freeing your team to focus on more value-added work.</p>
+<p>Mechanical sympathy is when you use a tool or system with an understanding of how it operates best. Use the technology approach that aligns best to what you are trying to achieve. For example, consider data access patterns when you select database or storage approaches.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="cost-optimization-pillar" class="slide level2">
+<h2>Cost Optimization pillar</h2>
+<ul>
+<li>Measure efficiency.</li>
+<li>Eliminate unneeded expense.</li>
+<li>Adopt the right consumption model.</li>
+<li>Consider using managed services</li>
+</ul>
+<aside class="notes">
+<p>Cost optimization is an ongoing requirement of any good architectural design. The process is iterative, and it should be refined and improved throughout your production lifetime. Understanding how efficient your current architecture is in relation to your goals can remove unneeded expense.</p>
+<p>Adopt the right consumption model for your use case. You might want to adopt a model where you pay only for the resources you use. Consider using managed services because they operate at cloud scale, and they can offer a lower cost per transaction or service.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="sustainability-pillar" class="slide level2">
+<h2>Sustainability pillar</h2>
+<ul>
+<li>Establish sustainability goals.</li>
+<li>Maximize utilization.</li>
+<li>Choose efficient hardware and software.</li>
+<li>Reduce downstream impact.</li>
+</ul>
+<aside class="notes">
+<p>The Sustainability pillar addresses the ability to build architectures that maximize efficiency and reduce waste. The discipline of sustainability addresses the long-term environmental, economic, and societal impact of your business activities.&nbsp;You should understand the impact of your workloads and work to reduce the downstream impact. Sustainability in the cloud is a continuous effort. It focuses primarily on energy reduction and efficiency across all components of a workload by achieving the maximum benefit from the resources provisioned and minimizing the total resources required. This effort can include the initial selection of an efficient programming language, adoption of modern algorithms, and use of efficient data storage techniques. It can also include deploying to correctly sized and efficient compute infrastructure and minimizing requirements for high-powered end-user hardware.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="using-the-aws-wa-tool" class="slide level2">
+<h2>Using the AWS WA Tool</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>Helps you review the state of your workloads and compares them to the latest AWS architectural best practices</li>
+<li>Gives you access to knowledge and best practices used by AWS architects when you need it</li>
+<li>Delivers an action plan with step-by-step guidance on how to build better workloads for the cloud</li>
+<li>Provides a consistent process for you to review and measure your cloud architectures</li>
+</ul>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/icons/Well Architected Tool.png" style="width:30.0%"></p>
+<figcaption>Well Architected Tool</figcaption>
+</figure>
+</div>
+</div></div>
+<aside class="notes">
+<p>If you want help designing a well-architected solution, you can use the AWS Well-Architected Tool. The AWS WA Tool is a self-service tool that provides you with on-demand access to current AWS best practices. These best practices can help you build secure, high-performing, resilient, and efficient application infrastructure on AWS.</p>
+<p>The AWS WA Tool helps you review the state of your workloads and compare them to the latest AWS architectural best practices. It gives you access to knowledge and best practices used by AWS architects when you need it.</p>
+<p>The AWS WA Tool is available in the AWS Management Console. You define your workload and answer a series of questions in the areas of operational excellence, security, reliability, performance efficiency, and cost optimization. The AWS WA Tool then delivers an action plan with step-by-step guidance on how to improve your workload for the cloud.</p>
+<p>The AWS WA Tool provides a consistent process for you to review and measure your cloud architectures. With the tool, you can gather data and get recommendations to do the following:</p>
+<ul>
+<li>Minimize system failures and operational costs.</li>
+<li>Dive deep into business and infrastructure processes.</li>
+<li>Provide best practice guidance.</li>
+<li>Deliver on the cloud computing value proposition.</li>
+</ul>
+<p>You can use the results the tool provides to identify next steps for improvement, drive architectural decisions, and bring architecture considerations into your corporate governance process.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="key-takeaways-1" class="slide level2">
+<h2>Key Takeaways</h2>
+<ul>
+<li>The AWS Well-Architected Framework provides a consistent approach to evaluate cloud architectures and guidance to help implement designs.</li>
+<li>The AWS Well-Architected Framework is organized into six pillars.</li>
+<li>Each pillar documents a set of foundational questions you can use to understand if a specific architecture aligns well with cloud best practices.</li>
+<li>The AWS WA Tool helps you review the state of your workloads and compares them to the latest AWS architectural best practices.</li>
+</ul>
 <aside class="notes">
 
 <style type="text/css">
@@ -527,12 +1101,723 @@ Mr.&nbsp;John Jennings
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section></section>
-<section id="references" class="title-slide slide level1 center">
-<h1>References</h1>
+</section>
+<section class="slide level2">
 
+</section></section>
+<section>
+<section id="best-practices-for-building-solutions-on-aws" class="title-slide slide level1 center">
+<h1>Best practices for building solutions on AWS</h1>
+<aside class="notes">
+
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="design-trade-offs" class="slide level2">
+<h2>Design trade-offs</h2>
+<p>As you design a solution, think carefully about trade-offs so you can select an optimal approach.</p>
+<ul>
+<li>Evaluate trade-offs so you can select an optimal approach.</li>
+<li>Examples of trade-offs include the following:
+<ul>
+<li>Trade consistency, durability, and space for time and latency to deliver higher performance.
+<ul>
+<li>For new features, prioritize speed to market over cost.</li>
+</ul></li>
+</ul></li>
+<li>Base design decisions on empirical data.</li>
+</ul>
+<aside class="notes">
+<p>As you design a solution, think carefully about trade-offs so you can select an optimal approach. For example, you might trade consistency, durability, and space for time and latency to deliver higher performance. Or you might prioritize speed to market over cost.</p>
+<p>Trade-offs can increase the cost and complexity of your architecture, so your design decisions should be based on empirical data. For example, you might need to perform load testing to ensure that a measurable benefit is obtained in performance. Or you might need to perform benchmarking to achieve the most cost-optimal workload over time. When you evaluate performance-related improvements, consider how your architecture design choices will impact customers and workload efficiencies.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="implementing-scalability" class="slide level2">
+<h2>Implementing scalability</h2>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Ensure that your architecture can handle changes in demand.</strong></p>
+</div>
+<div class="callout-content">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/w01/implement-scalability.png" style="width:70.0%"></p>
+<figcaption>Implement Scalability</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>When you run your workloads on the AWS Cloud, you can scale your infrastructure quickly and pro-actively. Make sure that you implement scalability at every layer of your infrastructure. By implementing scalability, you can improve your design to anticipate the need for more capacity and deliver it before it’s too late.</p>
+<p>For example, you can use a monitoring solution like Amazon CloudWatch to detect whether the total load across your fleet of servers has reached a specified threshold. You can define this threshold to be Stayed above 60% CPU utilization for longer than 5 minutes or anything related to the use of resources. With CloudWatch, you can also design custom metrics based on specific applications that can invoke the resource scaling that is required.</p>
+<p>When an alarm is invoked, Amazon EC2 Auto Scaling immediately launches a new instance. That instance is then ready before capacity is reached, which provides a seamless experience for users.</p>
+<p>Ideally, you should also design your system to be elastic. When demand drops off, you’re not running (and paying for) instances that you no longer need.</p>
+<p>To understand the importance of scalability, consider where scaling is done reactively and manually. When application servers reach full capacity, users are prevented from accessing the application. Administrators then manually launch one or more new instances to manage the load. Unfortunately, it takes a few minutes for an instance to become available for use after it’s launched. That increases the time users can’t access the application.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="automating-your-environment" class="slide level2">
+<h2>Automating your environment</h2>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Automate the provisioning, termination, and configuration of resources.</strong></p>
+</div>
+<div class="callout-content">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/w01/automate-env.png" style="width:60.0%"></p>
+<figcaption>Automation</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>AWS offers built-in monitoring and automation tools at virtually every layer of your infrastructure. Take advantage of these tools to ensure that your infrastructure can respond quickly to changes.</p>
+<p>Without built-in monitoring and automation tools, you must manually detect and respond to any failures. If an application server fails, you must detect it and manually notify the administrator. The administrator must manually launch and configure the new server.</p>
+<p>Tools like CloudWatch and Amazon EC2 Auto Scaling can detect unhealthy resources and automate the launch of replacement resources. You can also be notified when resource allocations change.</p>
+<p>In this example, when the application server crashes, CloudWatch automatically detects the failure. CloudWatch automatically launches and configures a new servers and notifies the administrator. The change is logged to a change management solution for tracking.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="using-iac" class="slide level2">
+<h2>Using IaC</h2>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Provision your computing infrastructure using code instead of manual processes.</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Rapidly deploy duplicate environments.</li>
+<li>Reduce configuration errors from manual configuration.</li>
+<li>Propagate changes consistently to all stacks</li>
+</ul>
+</div>
+</div>
+</div>
+
+<img data-src="images/w01/using-iac.png" style="width:40.0%" class="r-stretch quarto-figure-center"><p class="caption">Infrastructure as Code</p><aside class="notes">
+<p>Automation is a key goal across any computing environment. Infrastructure as code (IaC) is used for infrastructure automation to create environments. The most common use of IaC is in software development to build, test, and deploy applications.</p>
+<p>Rapidly deploy duplicate environments. Using a single template, identical environments can be deployed. IaC removes the repetitive manual steps and check-lists that were needed in the past.</p>
+<p>Reduce configuration errors from manual configuration. Manual configuration is error-prone because of human involvement. IaC reduces errors and streamlines error checking. If there are errors because of IaC code updates, you can quickly fix the situation by rolling the code-base to the last known stable configuration files. It’s also possible to roll back environments using previous versions of IaC configuration files for other reasons, such as the deployment of older application versions.</p>
+<p>Propagate changes consistently to all stacks with IaC. Make a change to the template and push those changes to all stacks. This makes it possible for a change to be deployed consistently.</p>
+<p>For more information, review What Is Infrastructure as Code? on the content resources page of your on-line course</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="treating-resources-as-disposable" class="slide level2">
+<h2>Treating resources as disposable</h2>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Take advantage of the dynamically provisioned nature of cloud computing.</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Automate deployment of new resources with identical configurations.</li>
+<li>Stop resources that are not in use.</li>
+<li>Test updates on new resources, and then replace old resources with updated ones.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<img data-src="images/w01/disposable.jpg" style="width:50.0%" class="r-stretch"><aside class="notes">
+<p>The best practice of treating resources as disposable refers to the idea of thinking about your infrastructure as software instead of hardware.</p>
+<p>With hardware, you can buy more components than you need so that you are prepared for spikes in usage. However, doing this is expensive and inflexible—it’s difficult to upgrade because of the sunk cost.</p>
+<p>Instead, when you treat your resources as disposable, migrating between instances or other discrete resources is fairly straightforward. You can quickly respond to changes in capacity needs, upgrade applications, and manage the underlying software.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="using-loosely-coupled-components" class="slide level2">
+<h2>Using loosely coupled components</h2>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Design architectures with independent components.</strong></p>
+</div>
+<div class="callout-content">
+<p><img data-src="images/w01/looselycoupled.png" style="width:70.0%"></p>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Traditional infrastructures have chains of tightly integrated servers, each with a specific purpose. The problem is that when one of those components or layers goes down, the disruption to the system can be fatal. It also impedes scaling. If you add or remove servers at one layer, you must also connect every server on each connecting layer.</p>
+<p>With loose coupling, you use managed solutions as intermediaries between the layers of your system. With this design, the intermediary automatically handles both failures and the scaling of components or layers.</p>
+<p>The example on the left shows a load balancer. Here, it’s an Elastic Load Balancing (ELB) load balancer that routes requests between the web servers and the application servers. If one application server goes down, the load balancer will automatically start directing all traffic to the two healthy servers.</p>
+<p>Two primary solutions for decoupling your components are load balancers and message queues.</p>
+<p>The example on the right illustrates a collection of web and application servers that are tightly coupled. If one application server goes down, it will cause an error because the web servers try and fail to connect to it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="designing-services-not-servers" class="slide level2">
+<h2>Designing services, not servers</h2>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Use the breadth of AWS services. Don’t limit your infrastructure to servers.</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>When appropriate, consider using containers or a serverless solution.</li>
+<li>Message queues can handle communication between applications.</li>
+<li>Static web assets can be stored off server, such as on Amazon Simple Storage Service (Amazon S3).</li>
+<li>User authentication and user state storage can be handled by managed AWS services</li>
+</ul>
+</div>
+</div>
+</div>
+
+<img data-src="images/w01/servicesnotservers.jpg" style="width:40.0%" class="r-stretch"><aside class="notes">
+<p>The next best practice is to design services, not servers. Although Amazon EC2 offers tremendous flexibility for designing and setting up your solution, it shouldn’t always be the first (or only) solution you use for every need. Sometimes, containers or a serverless solution might be more appropriate. Therefore, it’s important to consider what your needs are and which solution is appropriate.</p>
+<p>With AWS serverless solutions and managed services, you don’t need to provision, configure, and manage an entire EC2 instance.</p>
+<p>Managed solutions that have a lower profile and are more performant can replace server-based solutions at a lower cost. A few examples are AWS Lambda, Amazon SQS, Amazon DynamoDB, ELB, Amazon Simple Email Service (Amazon SES), and Amazon Cognito.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="choosing-the-right-database-solution" class="slide level2">
+<h2>Choosing the right database solution</h2>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Match technology to the workload, not the other way around.</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Read and write needs</li>
+<li>Total storage requirements</li>
+<li>Typical object size and nature of access to these objects</li>
+<li>Durability requirements</li>
+<li>Latency requirements</li>
+<li>Maximum concurrent users to support</li>
+<li>Nature of queries</li>
+<li>Required strength of integrity controls</li>
+</ul>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>It is important that you choose the right database solution. In traditional data centres and on-premises environments, limits on available hardware and licenses can constrain your choice of a data store solution. AWS recommends that you choose a data store based on your needs for your application environment.</p>
+<p>For more information, see Choosing an AWS Database Service on the content resources page of your on-line course.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="avoiding-single-points-of-failure" class="slide level2">
+<h2>Avoiding single points of failure</h2>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Assume everything fails. Then, design backward.</strong></p>
+</div>
+<div class="callout-content">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/w01/allfails.png" style="width:60.0%"></p>
+<figcaption>Avoid single points of failure</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Where possible, eliminate single points of failure from your architecture. This doesn’t mean you must always duplicate every component. Depending on your downtime service-level agreements (SLAs), you can use automated solutions that only launch components when needed. You can also use a managed service, so AWS automatically replaces malfunctioning underlying hardware for you.</p>
+<p>If two application servers are connected to a single database server, the database server represents a single point of failure and should be avoided. When it goes down, the application servers also go down. Application servers should continue to function even if the underlying physical hardware fails, is removed, or is replaced.</p>
+<p>A common way to avoid single points of failure is to create a secondary (standby) database server and replicate the data. This way, if the main database server goes offline, the secondary server can pick up the load.</p>
+<p>In this example, when the main database goes offline, the application servers automatically send their requests to the secondary database. This example also exemplifies the best practice to treat resources as disposable, and design your applications to support changes in hardware.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="optimizing-for-cost" class="slide level2">
+<h2>Optimizing for cost</h2>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Take advantage of the flexibility of AWS to increase your cost efficiency.</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Are my resources the right size and type for the job?</li>
+<li>Which metrics should I monitor?</li>
+<li>How do I turn off resources that are not in use?</li>
+<li>How often will I need to use this resource?</li>
+<li>Can I replace any of my servers with managed services?</li>
+</ul>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>With cloud computing, you can trade fixed expenses for variable expense. Fixed expenses are funds a company uses to acquire, upgrade, and maintain physical assets, such as property, industrial buildings, or equipment. Under this model, you pay for the servers in the data centre, whether they are active or not.</p>
+<p>By contrast, AWS services use a variable expense cost model, which means you pay only for the individual services you need for as long as you use them. In each service, you can optimize for cost. Many services offer different pricing tiers, models, or configurations.</p>
+<p>Remember, it can be very expensive to replicate an on-premises data centre setup of servers running 24/7 in the cloud. Therefore, the best way to build a cost effective infrastructure is to only provision the resources you need and stop services when they are not in use.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="using-caching" class="slide level2">
+<h2>Using caching</h2>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Minimize redundant data retrieval operations, improving performance and cost.</strong></p>
+</div>
+<div class="callout-content">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/w01/usecaching.png" style="width:60.0%"></p>
+<figcaption>Use caching</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Caching is a technique to make future requests faster and reduce network throughput by temporarily storing data in an intermediary location between the requester and the permanent storage. The primary purpose of a cache is to increase the performance of data retrieval by reducing the need to access the underlying slower storage layer. Future requests for cached data are served faster than requests that access the data’s primary storage location. With caching, you can efficiently reuse previously retrieved or computed data.</p>
+<p>In the example, the infrastructure uses Amazon CloudFront in front of Amazon S3 to provide caching. In this scenario, the initial request checks for the file in CloudFront. If it is not found, CloudFront requests the file from Amazon S3. CloudFront then stores a copy of the file at an edge location close to the user and sends a copy to the user who made the request.</p>
+<p>Subsequent requests for the file are retrieved from the (now closer) edge location in CloudFront instead of Amazon S3. The second, third, and nth requests are at a lower latency and cost. After the first request, you no longer pay to transfer the file out of Amazon S3.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="securing-your-entire-infrastructure" class="slide level2">
+<h2>Securing your entire infrastructure</h2>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Build security into every layer of your infrastructure.</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Use managed services.</li>
+<li>Log access of resources.</li>
+<li>Isolate parts of your infrastructure.</li>
+<li>Encrypt data in transit and at rest.</li>
+<li>Enforce access control granularly, using the principle of least privilege.</li>
+<li>Use multi-factor authentication (MFA).</li>
+<li>Automate your deployments to keep security consistent.</li>
+</ul>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Security isn’t only about getting through the outer boundary of your infrastructure. It also involves ensuring that your individual environments and their components are secured from each other.</p>
+<p>For example, in Amazon EC2, you can create security groups that you can use to determine which ports on your instances can send and receive traffic. Security groups can also determine where that traffic can come from or go to.</p>
+<p>You can use security groups to reduce the probability that a security threat on one instance will spread to every other instance in your environment. You should take similar precautions with other services. Specific ways to implement this best practice are discussed throughout the course.</p>
+<p>For more information, see AWS Cloud Security on the content resources page of your on-line course.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="key-takeaways-2" class="slide level2 scrollable smaller">
+<h2>Key Takeaways</h2>
+<ul>
+<li><p>As you design solutions, evaluate trade-offs and base your decisions on empirical data.</p></li>
+<li><p>Follow these best practices when building solutions on AWS:</p>
+<ul>
+<li>Implement scalability.</li>
+<li>Automate your environment.</li>
+<li>Treat resources as disposable.</li>
+<li>Use loosely-coupled components.</li>
+<li>Design services, not servers.</li>
+<li>Choose the right database solution.</li>
+<li>Avoid single points of failure.</li>
+<li>Optimize for cost.</li>
+<li>Use caching.</li>
+<li>Secure your entire infrastructure.</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="aws-global-infrastructure" class="title-slide slide level1 center">
+<h1>AWS Global Infrastructure</h1>
 
 </section>
+<section id="aws-global-infrastructure-topics" class="slide level2">
+<h2>AWS Global Infrastructure Topics</h2>
+
+<img data-src="images/w01/globalinfrastructure.png" style="width:100.0%" class="r-stretch quarto-figure-center"><p class="caption">AWS Global Infrastructure</p><aside class="notes">
+<p>The AWS Global Cloud Infrastructure is a secure, extensive, and reliable cloud platform, offering more than 200 fully featured services from data centres globally. The AWS Cloud infrastructure spans 102 Availability Zones in 32 geographic regions around the world. This gives you the ability to launch highly available, scalable, and flexible architectures near your customers for lower latency and increased performance.</p>
+<p>As you design and build architectures, you need to consider which region to deploy them. An AWS Region is a physical geographical location with two or more Availability Zones. Availability Zones, in turn, consist of one or more data centres. Your decisions should be based on the business requirements and the needs of the workload.</p>
+<p>For example, if low latency is a requirement for your workload, you should consider using AWS points of presence (PoPs) or regional edge caches. The AWS PoP network sits at the edge of the network to reduce latency. Using these edge locations keeps your popular data close to your customers.</p>
+<p>In this section, you learn about the AWS infrastructure, including Regions, availability zones, AWS Local Zones, AWS data centres, and AWS PoPs.</p>
+<p>For more information about infrastructure on AWS, see AWS Global Infrastructure on the content resources page of your on-line course.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="selecting-regions" class="slide level2">
+<h2>Selecting Regions</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>A Region is a geographical area.</li>
+<li>Each Region usually consists of two or more Availability Zones.</li>
+<li>Communication between Regions uses AWS backbone network infrastructure.</li>
+<li>You enable and control data replication across Regions.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/w01/region.png" style="width:50.0%"></p>
+<figcaption>Regions</figcaption>
+</figure>
+</div>
+</div></div>
+<aside class="notes">
+<p>A Region is a physical geographical location with two or more Availability Zones. Availability Zones, in turn, consist of one or more data centres.</p>
+<p>Regions are connected to multiple internet service providers (ISPs). Regions are also connected to a private global network backbone, which provides lower cost and more consistent cross-Region network latency when compared with the public internet.</p>
+<p>Regions that were introduced before March 20, 2019, are enabled by default. Regions that were introduced after March 20, 2019—such as Asia Pacific (Hong Kong) and Middle East (Bahrain)—are disabled by default. You must enable these Regions before you can use them. You can use the AWS Management Console to enable or disable a Region.</p>
+<p>Some Regions have restricted access. The isolated AWS GovCloud (US) Regions are designed to make it possible for US government agencies and customers to move sensitive workloads into the cloud by addressing their specific regulatory and compliance requirements.</p>
+<p>To achieve fault tolerance and stability, Regions are isolated from one another. Resources in one Region are not automatically replicated to other Regions. When you store data in a specific Region, it is not replicated outside that Region. It is your responsibility to replicate data across Regions if your business needs require it. AWS provides information about the country and—where applicable—the state where each Region resides. You are responsible for selecting the Region where you should store data based on your compliance and network latency requirements.</p>
+<p>AWS products and services are available by Region, so you might not have access to all Regions available for a given service.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="selecting-availability-zones" class="slide level2">
+<h2>Selecting Availability Zones</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Each Availability Zone includes the following:
+<ul>
+<li>It is made up of one or more data centres.</li>
+<li>It is designed for fault isolation.</li>
+<li>It is interconnected with other Availability Zones in a Region using high-speed private links.</li>
+</ul></li>
+<li>For certain services, you can choose your Availability Zones.</li>
+<li>AWS recommends replicating across Availability Zones for resiliency.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/w01/azs.png" style="width:50.0%"></p>
+<figcaption>Availability Zones</figcaption>
+</figure>
+</div>
+</div><aside class="notes">
+<p>Each Region consists of two or more isolated locations that called Availability Zones. Each Availability Zone comprises one or more data centres, with some Availability Zones having as many as six data centres. However, no data centre can be a part of two Availability Zones.</p>
+<p>Each Availability Zone is designed as an independent failure zone. This means that Availability Zones are physically separated in a typical metropolitan Region. They are also located in lower-risk floodplains (specific flood-zone categorization varies by Region). Availability Zones have a discrete, uninterruptible power supply and on-site backup generation facilities. In addition, they are each fed by different grids from independent utilities to further reduce single points of failure. Availability Zones are all redundantly connected to multiple tier-1 transit providers.</p>
+<p>An Availability Zone is the most granular level of specification that you can make for certain services, such as Amazon EC2.</p>
+<p>You are responsible for selecting the Availability Zones where your systems will reside. Systems can span multiple Availability Zones. You should design your systems to survive temporary or prolonged failure of an Availability Zone if a disaster occurs. Distributing applications across multiple Availability Zones means they can remain resilient in most failure situations, including natural disasters or system failures.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
+</section>
+<section id="using-local-zones" class="slide level2">
+<h2>Using Local Zones</h2>
+<ul>
+<li>Local Zones make it possible for you to run latency-sensitive portions of applications closer to end users and resources in a specific geography.</li>
+<li>They are an extension of a Region. With Local Zones, you can place AWS compute, storage, database, and other select services closer to large population, industry, and IT centres where no Regions exist today.</li>
+<li>Local Zones are managed and supported by AWS.</li>
+</ul>
+<aside class="notes">
+<p>Local Zones are a type of AWS infrastructure deployment. They place AWS compute, storage, database, and other select services closer to large population, industry, and IT centres where no Regions exist today. With Local Zones, you can run latency-sensitive portions of applications closer to end users and resources in a specific geography. You can use Local Zones to deliver single-digit millisecond latency for use cases such as media and entertainment content creation, real-time gaming, reservoir simulations, electronic design automation, and machine learning (ML).</p>
+<p>Each Local Zone location is an extension of a Region. You can run latency-sensitive applications in a Local Zone by using AWS services such as Amazon EC2, Amazon Virtual Private Cloud (Amazon VPC), Amazon Elastic Block Store (Amazon EBS), Amazon FSx, and ELB in geographic proximity to end users. Local Zones provide a high-bandwidth, secure connection between local workloads and workloads that run in the Region. With Local Zones you can seamlessly connect back to your other workloads that are running in AWS. You can connect to the full range of in-Region services through the same APIs and toolsets.</p>
+<p>Local Zones are managed and supported by AWS, and they provide you with all the elasticity, scalability, and security benefits of the cloud. With Local Zones, you can build and deploy latency-sensitive applications closer to your end users by using a consistent set of AWS services. You can also scale up or scale down, and you pay only for the resources you use.</p>
+<p>For more information, see AWS Local Zones on the content resources page of your on-line course.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="role-of-aws-data-centers" class="slide level2">
+<h2>Role of AWS data centers</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Data centres are where the data resides and data processing occurs.</li>
+<li>A data centre typically has tens of thousands of servers.</li>
+<li>All data centres are on-line and serving customers.</li>
+<li>AWS custom network equipment includes the following:
+<ul>
+<li>Is sourced from multiple ODMs</li>
+<li>Has a customized network protocol stack</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/w01/datacenter.png"></p>
+<figcaption>Data Centers</figcaption>
+</figure>
+</div>
+</div></div>
+<aside class="notes">
+<p>The foundation for the AWS infrastructure is the data centres. You do not specify a data centre for the deployment of resources. However, a data centre is the location where the actual data resides. Amazon operates state-of-the-art, highly available data centres. Though rare, failures that affect the availability of instances in the same location can occur. If you host all your instances in a single location that is affected by such a failure, none of your instances will be available.</p>
+<p>All data centres are on-line and serving customers. In case of failure, automated processes move customer data traffic away from the affected area. Core applications are deployed in an N+1 configuration. In the event of a data centre failure, there is sufficient capacity for traffic to be load balanced to the remaining sites.</p>
+<p>AWS uses custom network equipment sourced from multiple original device manufacturers (ODMs). ODMs design and manufacture products based on specifications from another company. The other company then re-brands the products for sale.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="aws-pops" class="slide level2">
+<h2>AWS PoPs</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="images/w01/edge.png" style="width:20.0%"></p>
+<ul>
+<li>Edge Location
+<ul>
+<li>AWS data centres and servers located close to customers and designed to deliver services with the lowest latency possible</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/w01/edgecache.png" style="width:20.0%"></p>
+<ul>
+<li>Regional edge cache
+<ul>
+<li>AWS data centres between the origin server and the edge location that have a longer cache</li>
+</ul></li>
+</ul>
+</div><aside class="notes">
+<p>To deliver content to end users with lower latency, CloudFront uses a global network that includes more than 410 PoPs. The PoPs are comprised of 400 edge locations and 13 regional mid-tier caches. These PoPs are the initial destination for a CloudFront request.</p>
+<p>The edge locations make sure that popular content can be served quickly to customers. Regional edge caches bring more of your content closer to customers even if it is not popular enough to stay at an edge location. This helps reduce latency for customers. Regional edge caches increase efficiency and are transparent to the end user. Edge locations are located in North America, Europe, Asia, Australia, South America, the Middle East, Africa, and China. Edge locations support AWS services like Amazon Route 53, AWS Global Accelerator, and CloudFront.</p>
+<p>Regional edge caches are used by default with CloudFront. They are used when you have content that is not accessed frequently enough to remain in an edge location. Regional edge caches absorb this content and provide an alternative to fetching the content from the origin server.</p>
+<p>For more information, see Points of Presence on the content resources page of your on-line course.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
+</section>
+<section id="key-takeaways-3" class="slide level2">
+<h2>Key Takeaways</h2>
+<ul>
+<li>The AWS Global Infrastructure consists of Regions, Availability Zones, and edge locations.</li>
+<li>Your choice of a Region is typically based on compliance requirements or to reduce latency.</li>
+<li>Each Availability Zone is physically separate from other Availability Zones and has redundant power, networking, and connectivity.</li>
+<li>Edge locations and regional edge caches improve performance by caching content closer to users.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="module-wrap-up" class="title-slide slide level1 center">
+<h1>Module Wrap-Up</h1>
+
+</section>
+<section id="module-summary" class="slide level2">
+<h2>Module Summary</h2>
+<p>This module prepared you to:</p>
+<ul>
+<li>Recognize the basic elements of the café business case</li>
+<li>Describe the role of a cloud architect</li>
+<li>Define cloud architecture.</li>
+<li>Describe how to design and evaluate architectures using the AWS Well-Architected Framework.</li>
+<li>Explain best practices for building solutions on AWS.</li>
+<li>Describe how to make informed decisions about where to place AWS resources.</li>
+</ul>
+</section>
+<section id="thank-you" class="slide level2">
+<h2>Thank You</h2>
+<p>Corrections, feedback, or questions?</p>
+<p>email: john.jennings@tus.ie</p>
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
